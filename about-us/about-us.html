@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="/css/home.css" />
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/range.css">
+    
+    
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/jquery-ui.min.js"></script>
+        <!-- range slider -->
+        <script src="/js/rangeslider.min.js"></script>
+    
+    
+        <title>pheabs</title>
+    
+    </head>
+<style>
+    .about-card {
+        margin-top: 90px;
+        border: solid 0.7px;
+        border-color: white;
+        padding: 25px;
+        display: flex;
+    }
+
+    .card-content {
+        margin: auto 0px;
+    }
+
+    .about-card img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0px;
+    }
+
+    .card-body {
+        border: 0px;
+        height: 100%;
+    }
+
+    .card-body img {
+        margin: auto;
+    }
+
+    .carousel-button {
+        margin-right: 20px;
+        height: 40px;
+        width: 100px;
+        float: right;
+        color: white;
+        position: relative;
+    }
+
+    .left-arrow {
+        display: flex;
+    }
+
+    .left-arrow:hover #left-line-arrow {
+        visibility: visible;
+        transition-duration: 0.8s;
+        transform: translateX(-15px);
+        transition-timing-function: ease;
+    }
+
+    .left-arrow:hover #left-curve-arrow {
+
+        transition-duration: 0.6s;
+        transform: translateX(-15px);
+    }
+
+
+
+
+    #left-line-arrow {
+        margin: auto;
+        width: 32px;
+        height: 12px;
+        margin-left: -15px;
+        transform: translateX(10px);
+        visibility: hidden;
+
+    }
+
+    #left-curve-arrow {
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        transform: translateX(15px);
+
+    }
+
+    .right-arrow {
+        display: flex;
+        position: relative;
+    }
+
+    #right-line-arrow {
+        margin: auto;
+        width: 32px;
+        height: 12px;
+        margin-right: -15px;
+        transform: translateX(-15px);
+        visibility: hidden;
+    }
+
+    #right-curve-arrow {
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        transform: translateX(-10px);
+    }
+
+    .right-arrow:hover #right-line-arrow {
+        visibility: visible;
+        transition-duration: 0.8s;
+        transform: translateX(20px);
+    }
+
+    .right-arrow:hover #right-curve-arrow {
+
+        transition-duration: 0.6s;
+        transform: translateX(20px);
+    }
+
+
+
+
+    @media (max-width: 480px) {
+        .carousel-inner .carousel-item>div {
+            display: none;
+        }
+
+        .carousel-inner .carousel-item>div:first-child {
+            display: block;
+        }
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-start,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+
+    @media (min-width: 768px) {
+
+        .carousel-inner .carousel-item-right.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-item-next:not(.carousel-item-start) {
+            transform: translateX(25%) !important;
+        }
+
+        .carousel-inner .carousel-item-left.active,
+        .carousel-item-prev:not(.carousel-item-end),
+        .active.carousel-item-start,
+        .carousel-item-prev:not(.carousel-item-end) {
+            transform: translateX(-25%) !important;
+        }
+
+        .carousel-item-next.carousel-item-start,
+        .active.carousel-item-end {
+            transform: translateX(0) !important;
+        }
+
+        .carousel-inner .carousel-item-prev,
+        .carousel-item-prev:not(.carousel-item-end) {
+            transform: translateX(-25%) !important;
+        }
+    }
+</style>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-fixed-top" id="main_navbar" role="navigation">
+        <div class="container-fluid ">
+          <a id="logo" class="navbar-brand logo" href="#">
+            <img src="/public/logo.svg" alt="logo" width="100" height="50">
+          </a>
+    
+          <div id="social-nav" class="social-media">
+            <ul>
+              <li>
+                <img src="/public/facebook.svg" width="30" height="30" alt="facebok icon">
+              </li>
+              <li>
+                <img src="/public/linkedin.svg" width="30" height="30" alt="linkedin">
+              </li>
+              <li>
+                <img src="/public/envelope.svg" width="30" height="30" alt="envelope">
+              </li>
+            </ul>
+          </div>
+    
+    
+    
+    
+          <input type="checkbox" class="openSidebarMenu navbar-toggler" id="openSidebarMenu" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+          <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+          </label>
+    
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/about-us/about-us.html" role="button" data-bs-toggle="dropdown">
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/about-us/about-us.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="/about-us/FAQs.html">FAQ</a></li>
+                  <li><a class="dropdown-item" href="/about-us/how-it-works.html">How it works</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Our Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/our-product/bad-credit-loans.html">Bad Credit loas</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/our-product/cash-advances.html">Cash Advance</a></li>
+                  <li><a class="dropdown-item" href="/our-product/emergency-cash-loans.html">Emergency Cash
+                      Loans</a></li>
+                  <li><a class="dropdown-item" href="/our-product/fast-cash.html">Fast Cash</a></li>
+                  <li><a class="dropdown-item" href="/our-product/guaranteed-loans.html">Guaranteed Loans</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/our-product/installment-loans.html">Installment Loans</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/our-product/no-credit-check-loans.html">No Credit Check
+                      Loans</a></li>
+                  <li><a class="dropdown-item" href="/our-product/online-loans.html">Online Loans</a></li>
+                  <li><a class="dropdown-item" href="/our-product/payday-advance.html">Payday Advance</a></li>
+                  <li><a class="dropdown-item" href="/our-product/personal-loans-for-bad-credit.html">Personal
+                      Loans for Bad Credit</a></li>
+                  <li><a class="dropdown-item" href="/our-product/same-day-loans.html">Same Day Loans</a></li>
+                  <li><a class="dropdown-item" href="/our-product/short-term-loans.html">Short Term Loans</a>
+                  </li>
+                 
+                </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Payday Loads
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/pay-day/alabama.html">Alabama</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/california.html">California</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/colorado.html">Colorado</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/florida.html">Florida</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/illinoise.html">Illinois</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/indiana.html">Indiana</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/iowa.html">Iowa</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/kentucky.html">Kentucky</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/las-vegas-and-nevada.html">Las Vegas and
+                      Nevada</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/louisiana.html">Louisiana</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/maryland.html">Maryland</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/new-mexico.html">New Mexico</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/ohio.html">Ohio</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/tennessee.html">Tennessee</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/texas.html">Texas</a></li>
+    
+    
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/canada.html" role="button">
+                  Canada
+                </a>
+    
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Business
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/business/invoice-factoring.html">Invoice Factoring</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/business/merchand-cash-advance.html">Merchand Cash</a>
+                  </li>
+    
+    
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/guides.html" role="button">
+                  Guides
+                </a>
+    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link get-started" aria-current="page" href="#">Get Started</a>
+              </li>
+            </ul>
+    
+    
+    
+          </div>
+        </div>
+      </nav>
+
+    <section class="hero bg-3">
+        <div class="col-11 mx-auto" style="padding-top: 170px;">
+            <div class="d-flex flex-wrap">
+                <div class="col-12 col-lg-7" style="margin-bottom: 80px;">
+                    <div class=" my-auto">
+                        <h1 class="hero-title">Pheabs is a Loans Connection Service -Helping To Find The Best Lender For
+                            You</h1>
+                    </div>
+                    <div class="about-paragraph ">
+                        <p class="white">
+                            Our online form is simple, and you could have the funds you need within 24 hours (or next
+                            business day).
+                        </p>
+                    </div>
+                    <div class="google-img">
+                        <img src="/public/google-reviews.png" width="150" height="50" alt="">
+                    </div>
+
+                    <div class="review-icon">
+                        <img src="/public/Five-Star-Google-Review.png" width="150" height="40" alt="">
+
+                    </div>
+                </div>
+
+                <div class="about-card col-12 col-lg-5 ">
+                    <div class="card-content">
+                        <img src="/public/logo.svg" class="card-img-top" width="130" height="70" alt="...">
+                        <div class="card-body">
+
+                            <p class="card-text">Borrow $100 to $35,000 - Start Your Application Today</p>
+                            <a href="#" class="btn get-started">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder">
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-lg-6">
+                        <h1 class="title orange">Meet Our Founder, Daniel</h1>
+                        <p>" I set up Pheabs in 2018 and my passion has always been to help customers find the right
+                            borrowing options for them."</p>
+                        <p>"With high-cost loan available on the streets, in-stores and the risk of illegal borrowing,
+                            Pheabs was set up to ogger a safe, secure and free serfvice to help borrowers when they
+                            needed a little extra cash or loan to petentially change their life."</p>
+                        <p>“At Pheabs, we do not charge our customers a broker fee, admin fee or loan request form fee,
+                            and instead we charge our lending partners a commission if your enquiry is successful.”</p>
+                        <p>“Please do not hesitate to contact me if you have any questions.”</p>
+
+                    </div>
+                    <div class="founder-img col-8 col-lg-6 mx-auto pl-lg">
+                        <img src="/public/about-Pheabs-rotated.jpg" width="80%" height="auto" alt="founder">
+                    </div>
+                </div>
+                <div class="col-8 mx-auto py-lg">
+                    <h1 class="title green center">In 2022, We've Donated More Than $25,000 To National Breast Cancer
+                        Foundation Inc</h1>
+                    <div class="center py-lg">
+                        <img src="/public/national-breast-cancer-foundation.png" width="400px" height="150px" alt="">
+                    </div>
+                </div>
+                <div class="center">
+                    <h2 class="title orange">How Did Pheabs Get its Name?</h1>
+                        <p>Pheabs was actually named after TV character Phoebe Buffay from the show Friends. The show is
+                            always playing in the background of my home and the nutty character is often referred to as
+                            Pheebs or Pheabs. And alas, that is how the name came about! Ironically, I actually prefer
+                            Seinfeld!</p>
+
+
+                        <h1 class="title orange center">How Does it Work?</h1>
+                        <p>Pheabs offers a simple loan connection service – taking your loan requirements and matching
+                            them
+                            with the US-lender who is mostly likely to approve you and offer the best terms possible.
+                            Complete our online loan request form in less than 5 minutes and you will receive a
+                            provisional
+                            quote on the screen – and you can proceed with the loan offer if you want to – with no fees
+                            and
+                            no impact to your credit score.
+                            Further to some checks by the lender, successful applicants can receive money to their
+                            checking
+                            account within 24 hours, next business day or sometimes within 1 hour.
+                            Our service is free today, tomorrow and always will be!</p>
+
+                        <div class="button-wrap mx-auto py-lg">
+                            <a class="link-wrap" href="">
+                                <div class="button-started">Get Started
+                                    <div class="button-icon">
+                                        <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="153" height="11" rx="5.5" fill="white" />
+                                        </svg>
+
+                                        <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            </div>
+
+
+    </section>
+
+
+    <section>
+        <div class="container py-lg">
+            <div class="main-col">
+
+                <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel" data-bs-interval="false">
+
+                    <div class="carousel-button">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
+
+                            <!--  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span> -->
+
+                            <div class="left-arrow">
+                                <svg id="left-curve-arrow" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M56.7247 1.63708C58.9225 3.82617 58.9298 7.38266 56.7409 9.58071L13.3374 53.1654L56.9421 96.3179C59.057 98.4109 59.0749 101.822 56.9821 103.937C54.8892 106.052 51.4782 106.07 49.3633 103.977L1.59798 56.7073C-0.51693 54.6143 -0.53484 51.203 1.55798 49.0879C1.56795 49.0778 1.57795 49.0678 1.58799 49.0578C1.6615 48.9748 1.7379 48.8934 1.81717 48.8138L48.7816 1.65331C50.9706 -0.544749 54.5268 -0.552015 56.7247 1.63708Z"
+                                        fill="black" />
+                                </svg>
+                                <svg id="left-line-arrow" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="153" height="11" rx="5.5" fill="black" />
+                                </svg>
+
+                            </div>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span> -->
+                            <div class="right-arrow">
+                                <svg id="right-line-arrow" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="153" height="11" rx="5.5" fill="black" />
+                                </svg>
+
+
+                                <svg id="right-curve-arrow" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.8155 1.63708C-0.382558 3.82617 -0.389828 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.51698 98.4109 -0.534886 101.822 1.55809 103.937C3.65107 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.9661 49.0673 56.9559 49.0571C56.8825 48.9743 56.8063 48.8931 56.7273 48.8138L9.75914 1.65331C7.57004 -0.544748 4.01355 -0.552015 1.8155 1.63708Z"
+                                        fill="black" />
+                                </svg>
+
+
+                            </div>
+
+                        </button>
+                    </div>
+
+                    <div class="carousel-inner w-100">
+                        <div class="carousel-item active">
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="card card-body">
+                                    <img src="/public/san-diego-chamber.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="card card-body">
+                                    <img src="/public/visit-sanjose.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="card card-body">
+                                    <img src="/public/lincoln-chamber.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="card card-body">
+                                    <img src="/public/roseville-chamber.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="card card-body">
+                                    <img src="/public/news-channel-5-nashville.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="card card-body">
+                                    <img src="/public/yahoo.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="card card-body">
+                                    <img src="/public/winona-RADIO.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="card card-body">
+                                    <img src="/public/hollywood-chamber-of-commerce.png" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="center py-xl">
+                    <h1 class="title green py-lg">Other Sites We Run</h1>
+                    <div class="row row-cols-1 row-cols-lg-3 other-sites">
+                        <div class="col sites-link">
+                            <a href="http://"> Finger finance</a>
+                        </div>
+                        <div class="col sites-link">
+                            <a href="http://"> Dime Alley</a>
+                        </div>
+                        <div class="col sites-link">
+                            <a href="http://">Dollar Hand</a>
+                        </div>
+                        <div class="col sites-link">
+                            <a href="http://">Capital Bean</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- 
+    <section id="feature">
+        <div class="container">
+            <div class="main-col">
+                <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+                    
+                  
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="img-wrapper"> </div>
+                            
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"> </div>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"> </div>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"> </div>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"> </div>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"> </div>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"> </div>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="img-wrapper"> </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+ -->
+
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="main-col">
+                <div class="footer-wrapper">
+                    <div class="row row-cols-md-2 row-cols-lg-3">
+                        <div class="col-8 col-lg-7 footer">
+                            <img src="/public/logo.svg" width="130px" height="80px" alt="">
+                            <p class="copyright">Copyright @2021 Pheabs. All Rights Reserved</p>
+                            <p class="address">Address: <br>Pheabs, 515 ELas Olas Boulevard, Suite 120 , Fort Lauderdale
+                                FL
+                                33301</p>
+                            <a href="http://"> Find Us on Google Maps</a>
+                        </div>
+                        <div class="col-8 col-lg-3 footer-link">
+                            <h1>Navigation</h1>
+                            <ul>
+                                <li><a href="http://">About Us</a></li>
+                                <li><a href="http://">Apply Now</a></li>
+                                <li><a href="http://">How it Works</a></li>
+                                <li><a href="http://">Contact Us</a></li>
+                                <li><a href="http://">FAQs</a></li>
+                                <li><a href="http://">Blog</a></li>
+                                <li><a href="http://">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-8 col-lg-2 footer-info">
+                            <h1>Small Print</h1>
+                            <p>Privacy Policy</p>
+                            <p>Terms and Condition</p>
+                            <p>Email: info@pheabs.com</p>
+                            <p>Phone: 1-855-884-6510</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-info">@2023 Pheabs</div>
+                        <div class="footer-social">
+                            <ul>
+                                <li>
+                                    <a href="http://">
+                                        <img src="/public/facebook.svg" width="20" height="20" alt="facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://">
+                                        <img src="/public/linkedin.svg" width="20" height="20" alt="facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://">
+                                        <img src="/public/youtube.svg" width="20" height="20" alt="facebook">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="block" onclick="topFunction()" id="arrow-up" title="Go to top">
+            <img src="/public/up-arrow.svg" width="20" height="20" alt="arrow-up">
+
+        </button>
+    </section>
+
+    <script>
+        $('.carousel .carousel-item').each(function () {
+            var minPerSlide = 4;
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 0; i < minPerSlide; i++) { next = next.next(); if (!next.length) { next = $(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); }
+        });
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/bootnavbar.js"></script>
+<script src="/js/navbar.js"></script>
+<script src="/js/range-1.js"></script>
+<script src="/js/gototop.js"></script>
+</body>
+
+</html>

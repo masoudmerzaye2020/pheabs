@@ -1,0 +1,92 @@
+:root {
+    --darkgray: rgba(31,44,61,100);
+
+    --dark-gray:#003366;
+    --light-gray:#344581;
+    --yellow:#FFA726;
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --light-gray: #ededed;
+    --cyan-gray:#abb8c3;
+    --lightgray:#676767;
+    --black: #000000;
+    --white: #ffffff;
+    --pink: #f78da7;
+    --dark--red: #cf2e2e;
+    --orange: #ff6900;
+    --amber: #fcb900;
+    --light-green: #7bdcb5;
+    --vivid-green: #00d084;
+    --light--blue: #8ed1fc;
+    --vivid-blue: #0693e3;
+    --vivid-purple: #9b51e0;
+
+    --nectar-accent-color: #FFA726;
+    --nectar-extra-color-1: #32437b;
+    --nectar-extra-color-2: #ffffff;
+    --nectar-extra-color-3: #333333;
+  }
+
+#invoice-hero{
+    background-image: url("/public/invoice-factoring.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: -150px;
+    padding-bottom: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+
+    background-size: cover;
+}
+.invoice-wrapper{
+    padding-top: 80px;
+    
+}
+.invoice-wrapper h1{
+    color: var(--white);
+    padding-top: 200px;
+    text-align: center;
+    font-size: 32px;
+}
+.invoice-wrapper h2{
+    color: var(--white);
+    
+    text-align: center;
+    font-size: 26px;
+}
+.invoice-wrapper p{
+    color: var(--white);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.get-quate{
+    background-color: var(--nectar-accent-color);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    margin: 12px auto;
+}
+#factoring-example{
+    background-color: var(--light-gray);
+}
+.get-quate a{
+    color: var(--white);
+    text-decoration: none;
+}
+.review-icon{
+    display: flex;
+    margin: 12px auto;
+}
+
+.feature-wrapper h1{
+    text-align: center;
+    padding: 20px 0px;
+}
+.table .title td{
+    font-size: 16px;
+}

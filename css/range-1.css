@@ -1,0 +1,52 @@
+
+  #range {
+    width: 290px;
+    height: 18px;
+    margin: auto;
+    border-color: white;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    outline: none;
+  }
+
+
+  #range .ui-slider-range {
+    background: #ec0808;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, red , yellow) !important;
+}
+
+  #range .ui-slider-handle {
+    position: absolute;
+    padding-top: 6px;
+    margin: -6px 0 0 -17px;
+    border-radius: 6px;
+    background: rgb(252, 251, 251);
+    color: rgb(0, 0, 0);
+    border: 0;
+    height: 32px;
+    line-height: 20px;
+    text-align: center;
+    width: 84px;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+  }
+
+
+  #range .ui-slider-handle:hover,
+  #range .ui-slider-handle:focus {
+    transform: scale(1.1);
+  }
+
+  #range .ui-slider-range {
+    background: #69b6b5;
+  }
+  .cntr {
+    
+  margin: 2px 0px;
+  }
+  

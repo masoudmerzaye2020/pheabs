@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="/css/home.css" />
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/range.css">
+    
+    
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/jquery-ui.min.js"></script>
+        <!-- range slider -->
+        <script src="/js/rangeslider.min.js"></script>
+    
+    
+        <title>pheabs</title>
+    
+    </head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-fixed-top" id="main_navbar" role="navigation">
+        <div class="container-fluid ">
+            <a id="logo" class="navbar-brand logo" href="#">
+                <img src="/public/logo.svg" alt="logo" width="100" height="50">
+            </a>
+
+            <div id="social-nav" class="social-media">
+                <ul>
+                    <li>
+                        <img src="/public/facebook.svg" width="30" height="30" alt="facebok icon">
+                    </li>
+                    <li>
+                        <img src="/public/linkedin.svg" width="30" height="30" alt="linkedin">
+                    </li>
+                    <li>
+                        <img src="/public/envelope.svg" width="30" height="30" alt="envelope">
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <input type="checkbox" class="openSidebarMenu navbar-toggler" id="openSidebarMenu" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/about-us/about-us.html" role="button"
+                            data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about-us/about-us.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="/about-us/FAQs.html">FAQ</a></li>
+                            <li><a class="dropdown-item" href="/about-us/how-it-works.html">How it works</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Our Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/our-product/bad-credit-loans.html">Bad Credit loas</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/our-product/cash-advances.html">Cash Advance</a></li>
+                            <li><a class="dropdown-item" href="/our-product/emergency-cash-loans.html">Emergency Cash
+                                    Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/fast-cash.html">Fast Cash</a></li>
+                            <li><a class="dropdown-item" href="/our-product/guaranteed-loans.html">Guaranteed Loans</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/our-product/installment-loans.html">Installment
+                                    Loans</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/our-product/no-credit-check-loans.html">No Credit Check
+                                    Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/online-loans.html">Online Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/payday-advance.html">Payday Advance</a></li>
+                            <li><a class="dropdown-item" href="/our-product/personal-loans-for-bad-credit.html">Personal
+                                    Loans for Bad Credit</a></li>
+                            <li><a class="dropdown-item" href="/our-product/same-day-loans.html">Same Day Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/short-term-loans.html">Short Term Loans</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Payday Loads
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pay-day/alabama.html">Alabama</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/california.html">California</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/colorado.html">Colorado</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/florida.html">Florida</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/illinoise.html">Illinois</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/indiana.html">Indiana</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/iowa.html">Iowa</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/kentucky.html">Kentucky</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/las-vegas-and-nevada.html">Las Vegas and
+                                    Nevada</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/louisiana.html">Louisiana</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/maryland.html">Maryland</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/new-mexico.html">New Mexico</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/ohio.html">Ohio</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/tennessee.html">Tennessee</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/texas.html">Texas</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/canada.html" role="button">
+                            Canada
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Business
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/business/invoice-factoring.html">Invoice Factoring</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/business/merchand-cash-advance.html">Merchand Cash</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/guides.html" role="button">
+                            Guides
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link get-started" aria-current="page" href="#">Get Started</a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="payday-loans-hero" class="hero bg-1">
+        <div class="hero-container mx-auto">
+            <div class="col-10 mx-auto">
+                <h1 class="hero-title center">
+                    Payday Loans in California CA and Los Angeles <br>
+                    Get the Best Rates with Pheabs</h1>
+            </div>
+
+
+            <div class="col-9 mx-auto center py-lg">
+                <p class="hero-paragraph">Whether you're in San Francisco, Los Angeles or San Diego, we can help you
+                    find the best payday loans in California for you. Borrow $100 to $35,000 and if approved, you can
+                    get an advance and receive funds on the next business day.</p>
+            </div>
+
+            <div class="range-wrapper row col-10  col-lg-8 mx-auto my-x ">
+                <div class="col-12 col-md-6 ">
+                    <h4 class="white">How Much Do You Need?</h4>
+                    <div class="my-lg">
+                        <div>
+                            <input type="range" min="100" max="5000" step="1" value="3000" unit="$" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h4 class="white ">How Much Do You Need?</h4>
+                    <div class="my-lg">
+                        <div>
+                            <input type="range" min="12" max="60" step="1" value="30" unit="$" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-md-12 mx-auto my-lg">
+                    <a class="link-wrap" href="">
+                        <h3 class="button-radius">Get Started >></h3>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <section class="bg-light-gray">
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="center">
+                    <h1 class="orange title">Why Go to Pheabs for Payday Loans in California?</h1>
+                    <p>Pheabs offers a simple, fast and effective way to get payday loans in California – using our
+                        loans connection service we can help find the right lender for you and you can receive funds
+                        within 24 hours or sooner. </p>
+                    <p>A payday loan can be a helpful option if you need money for an emergency or something to tide you
+                        over until your next pay cheque. Or maybe you are considering all other alternatives, such as
+                        borrowing money from family or friends. Either way, once in a while, we all need a boost in our
+                        personal finances and Pheabs is here to help you every step of the way.</p>
+                </div>
+            </div>
+        </div>
+        <img src="/public/white-bottom-divider.svg" width="100%" height="100%" alt="">
+    </section>
+
+    <section>
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-lg-4">
+                        <h1 class="green">Where Can I Get A Payday Loan In California CA?</h1>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <p>Pheabs is here to help you find the best payday loans in California, covering every major
+                            town and city in the State. We offer a completely online process and your application will
+                            be processed against hundreds of direct money lenders, apps and payday stores to find you
+                            the best approval and most competitive rate.</p>
+                        <p>There is no need to go to every lender one-by-one and wait for approval. Nor is there a need
+                            to go to a bank or store, line up and wait for your turn, since everything can be processed
+                            online for you. Pheabs will search multiple providers at once and give you a quick decision
+                            – making it smart and convenient when you need to borrow money fast.</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-lg-4 ">
+                        <div class="center">
+                            <p>Bakersfield</p>
+                            <p>Fresno</p>
+                            <p>Lancaster</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="center">
+                            <p><a href="">Los Angeles</a></p>
+                            <p><a href="">Sacramento</a></p>
+                            <p><a href="">San Diego </a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="center">
+                            <p><a href="">San Francisco</a></p>
+                            <p>San Jose</p>
+                            <p>Stockton
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="button-wrap mx-auto py-lg">
+                        <a class="link-wrap" href="">
+                            <div class="button-started">Get Started
+                                <div class="button-icon">
+                                    <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="153" height="11" rx="5.5" fill="white" />
+                                    </svg>
+
+                                    <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-11 col-md-8 col-lg-6 mx-auto youtubelink">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0JfOX7c4EMw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+                    </div>
+                    <h1 class="title">Am I Eligible For A Payday Loan In California?</h1>
+                    <p>You must be a U.S. resident</p>
+                    <p>
+                        Over the age of 18</p>
+                    <p>In steady employment with a stable income</p>
+                    <p>Earning a minimum of $800 per month</p>
+                    <p>Valid and working mobile phone account</p>
+                    <p>
+                        Have a live checking account for your loan to be deposited into</p>
+                    <p>Can afford to meet repayments</p>
+                    <p>Los Angeles, San Francisco and San Diego included</p>
+                    <div class="button-wrap mx-auto py-lg">
+                        <a class="link-wrap" href="">
+                            <div class="button-started">Get Started
+                                <div class="button-icon">
+                                    <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="153" height="11" rx="5.5" fill="white" />
+                                    </svg>
+
+                                    <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <img src="/public/Payday-loans-in-Indiana.png" width="100%" height="100%" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-light-gray">
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-lg-4">
+                        <img src="/public/loans-for-bad-credit.png" width="95%" height="100%" alt="">
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <h1 class="orange title">How Much Can I Borrow With A Payday Loan from Pheabs?</h1>
+                        <p>You can borrow between $100 and $35,000 with a payday loan in California CA – with the amount
+                            you can borrow depending on things such as your income and credit score. When given a loan
+                            decision, it will be very clear how much you can borrow and the monthly repayments involved
+                            – so you can make sure that it is affordable for you before you proceed.</p>
+                        <p>There are options to get a quick fast payday loan so that you get the money upfront and then
+                            pay back the full loan amount and interest in just a few weeks – or your next payday. Or you
+                            can consider more longer term short term loans or installment loans for up to 60 months if
+                            you prefer to spread repayment over time. You will always have the option to repay your loan
+                            early if you need to – and you will often save money for doing so.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="center">
+                    <h1 class="orange title">How Long Does It Take To Receive A Payday Loan in California?</h1>
+                    <p>Receiving a payday loan in California could take as little as an hour or sometimes the next
+                        business day! When using Pheabs, your online form will be sent to lenders across California, and
+                        you’ll receive an instant decision. If your request is accepted, you’ll find the money in your
+                        account as fast as possible.</p>
+                    <p>To ensure that you get your loan as quickly as possible, get all your bank details ready to go.
+                        You should also stand by your emails and phone once you’ve applied, just in case you are needed
+                        to provide some follow-up information. For fastest response times, send it during work hours,
+                        since this is when most loans are funded, and avoid national holidays!</p>
+                    <h1 class="orange title">Do You Offer Payday Loans in Los Angeles, San Francisco and San Diego?</h1>
+                    <p>Yes, Pheabs offer payday loans in LA, San Francisco and San Diego and all other cities, towns and
+                        regions in the state of California. With an entirely online application, you can complete your
+                        details online from the comfort of your own home or even your living room.</p>
+                    <p>We proudly cover all areas of Cali, including Anaheim, Bakersfield, Corona, Denton, Escondido,
+                        Modesto, North Hills, Ontario, Orange, Sacramento and Stockton.</p>
+                    <h1 class="orange title">What Do I Need to Consider Before Getting a California Payday Loan?</h1>
+                    <p>Before requesting a payday loan in California, make sure to consider whether you can afford to
+                        meet the repayments on time. In the case that you are unable to repay your California payday
+                        loan, interest may be added. Not repaying your loan on time may also affect your credit score.
+                        It would be best if you thought about how much you need to borrow before getting started. This
+                        will help you make sure you don’t over-borrow or under-borrow.</p>
+                    <p>Have a think about how many repayments you might need to make, with our payday product is perfect
+                        for loans for 14 to 30 days, or you can opt for our installment loan product which allows you to
+                        repay over 6, 12 or 60 months if you prefer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contaier py-lg">
+            <div class="main-col">
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-lg-6">
+                        <img src="/public/California-payday-loans-banner.png" width="95%" height="100%" alt="">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h1 class="orange title">Can I Get a Payday Loan with Bad Credit in California?</h1>
+                        <p>If you have a bad credit score, don’t worry – you can still get a payday loan in California.
+                            With Pheabs, all credit histories are accepted. This means that you should still request a
+                            payday loan with us even if you have already been turned down by a bank because of bad
+                            credit. Our lenders are considering several other factors including your income, employment
+                            and other recent payments that you might have made on time. Pheabs will also consider those
+                            looking for no credit check loans, but note that a credit check is usually carried out for
+                            all customers.</p>
+
+                        <div class="button-wrap">
+                            <a class="link-wrap" href="">
+                                <div class="button-started">Get Started
+                                    <div class="button-icon">
+                                        <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="153" height="11" rx="5.5" fill="white" />
+                                        </svg>
+
+                                        <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-xl">
+            <div class="main-col">
+                <div class="center">
+                    <h1>Where to Find Us</h1>
+                    <p>Whether you’re in San Diego, Los Angeles or San Francisco, Pheabs can help you to find the payday
+                        loans in California best for you.</p>
+                    <div class="map-frame">
+                        <iframe loading="lazy" style="border: 0px; opacity: 1; visibility: visible;" tabindex="0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509207.141942299!2d-123.81189071941567!3d37.19253787185556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2suk!4v1611760881206!5m2!1sen!2suk"
+                            width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen"
+                            aria-hidden="false"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-yellow">
+        <div class="container py-lg">
+            <div class="main-col">
+                <h1 class="title black center">FAQs on California Payday Loans</h1>
+                <div class="row ">
+
+                    <div class="nav nav-links d-flex  flex-wrap col-lg-4 faq-question" id="myTab">
+
+                        <a href="#first" class="nav-link  flex-fill  active" data-bs-toggle="tab">
+                            Do You Accept All Credit histories?
+                        </a>
+                        <a href="#second" class="nav-link flex-fill mx-6" data-bs-toggle="tab">
+                            Is Pheabs a Broker?
+                        </a>
+                        <a href="#third" class="nav-link flex-fill " data-bs-toggle="tab">
+                            How Much Can I Borrow?
+                        </a>
+                        <a href="#fourth" class="nav-link flex-fill" data-bs-toggle="tab">
+                            What Is the Repayment Period?
+                        </a>
+                        <a href="#fifth" class="nav-link flex-fill" data-bs-toggle="tab">
+                            What Is the Eligibility Criteria?
+                        </a>
+                        <a href="#sixth" class="nav-link flex-fill" data-bs-toggle="tab">
+                            Do You Charge Fees For Using Your Service?
+                        </a>
+                    </div>
+
+                    <div class="tab-content col-lg-8 faq-answer">
+                        <div class="tab-pane active" id="first">
+
+                            <p> Yes, Pheabs considers all different types of credit histories, including those with bad
+                                credit. So you should not be discouraged if you have had the occasional default in the
+                                past or have been turned down by other lenders or banks. Our partners will consider poor
+                                credit provided that you have a regular and stable income and a commitment to repay your
+                                loan on time.</p>
+                        </div>
+                        <div class="tab-pane fade" id="second">
+
+                            <p>Yes! Pheabs is a broker. This means that if you’re approved we won’t provide the funds
+                                for your loan directly. Instead, we connect you to a lender best suited to your
+                                situation from our trusted panel. But do not worry, your information is completely
+                                secure and will not be sent or shared with any other companies or third parties and we
+                                certainly will not charge you anything for using our service. </p>
+                        </div>
+                        <div class="tab-pane fade" id="third">
+
+                            <p> With Pheabs, you could find California payday loans ranging from $100 to $35,000 – with
+                                the amount you can borrow based on factors like your monthly income, credit status and
+                                affordability. Other things come into play too, including your residence (homeowners are
+                                often preferred), age and whether you have any other similar loans open too.</p>
+                        </div>
+                        <div class="tab-pane fade" id="fourth">
+
+                            <p>Customers can repay over 1 month to 60 months (or equal to 5 years) – this will depend on
+                                whether you prefer the payday option which may be just a few weeks or months, or the
+                                longer installment option which can be several years to stretch our your repayments.
+                                Payments are usually made in equal monthly installments from the bank account you choose
+                                and you always have the option to repay early if you would like to do so.</p>
+                        </div>
+                        <div class="tab-pane fade" id="fifth">
+
+                            <p> When applying for a payday loan in California, you will have to meet a few different
+                                criteria to be eligible. This can include: </p>
+                            <ul>
+                                <li>You must be over 18 years old.</li>
+                                <li>You must be a resident in the U.S.</li>
+                                <li>You must be earning $800 per month minimum.</li>
+                                <li>You must be in steady employment.</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="sixth">
+
+                            <p>Absolutely not, we do not and will never charge fees for using our service. Instead, we
+                                take a fee or commission from the lender if your application is approved and successful.
+                                The lenders will charge a daily or monthly interest if your loan is active and this will
+                                be presented to you in writing before your proceed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="main-col">
+                <div class="row row-cols-md-2 row-cols-lg-3">
+                    <div class="col-8 col-lg-7 footer">
+                        <img src="/public/logo.svg" width="130px" height="80px" alt="">
+                        <p class="copyright">Copyright @2021 Pheabs. All Rights Reserved</p>
+                        <p class="address">Address: <br>Pheabs, 515 ELas Olas Boulevard, Suite 120 , Fort Lauderdale FL
+                            33301</p>
+                        <a href="http://"> Find Us on Google Maps</a>
+                    </div>
+                    <div class="col-8 col-lg-3 footer-link">
+                        <h1>Navigation</h1>
+                        <ul>
+                            <li><a href="http://">About Us</a></li>
+                            <li><a href="http://">Apply Now</a></li>
+                            <li><a href="http://">How it Works</a></li>
+                            <li><a href="http://">Contact Us</a></li>
+                            <li><a href="http://">FAQs</a></li>
+                            <li><a href="http://">Blog</a></li>
+                            <li><a href="http://">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-8 col-lg-2 footer-info">
+                        <h1>Small Print</h1>
+                        <p>Privacy Policy</p>
+                        <p>Terms and Condition</p>
+                        <p>Email: info@pheabs.com</p>
+                        <p>Phone: 1-855-884-6510</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-info">@2023 Pheabs</div>
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="http://">
+                                    <img src="/public/facebook.svg" width="20" height="20" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://">
+                                    <img src="/public/linkedin.svg" width="20" height="20" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://">
+                                    <img src="/public/youtube.svg" width="20" height="20" alt="facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="block" onclick="topFunction()" id="arrow-up" title="Go to top">
+            <img src="/public/up-arrow.svg" width="20" height="20" alt="arrow-up">
+
+        </button>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootnavbar.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/range.js"></script>
+    <script src="/js/gototop.js"></script>
+
+    <script>
+        new bootnavbar();
+    </script>
+</body>
+
+</html>

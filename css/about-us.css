@@ -1,0 +1,382 @@
+:root {
+    --darkgray: rgba(31,44,61,100);
+
+    --dark-gray:#003366;
+    --light-gray:#344581;
+    --yellow:#FFA726;
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --light-gray: #ededed;
+    --cyan-gray:#abb8c3;
+    --lightgray:#676767;
+    --black: #000000;
+    --white: #ffffff;
+    --pink: #f78da7;
+    --dark--red: #cf2e2e;
+    --orange: #ff6900;
+    --amber: #fcb900;
+    --light-green: #7bdcb5;
+    --vivid-green: #00d084;
+    --light--blue: #8ed1fc;
+    --vivid-blue: #0693e3;
+    --vivid-purple: #9b51e0;
+
+    --nectar-accent-color: #FFA726;
+    --nectar-extra-color-1: #32437b;
+    --nectar-extra-color-2: #ffffff;
+    --nectar-extra-color-3: #333333;
+  }
+
+
+#about-us {
+    background-image: url("/public/hero_bg_4.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+    padding-bottom: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+
+    background-size: cover;
+ 
+  }
+  .about-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      padding-top: 100px;
+  }
+  .about-title h1{
+      padding-top: 30px;
+      font-size: 35px;
+      color: var(--white);
+      font-weight: 700;
+      text-align: left;
+      line-height: 39px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .about-paragraph {
+      color: var(--white);
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 400;
+      text-align: left;
+      padding-top: 40px;
+      margin: auto;
+  }
+
+  .google-img img{
+      margin: 15px 0;
+  }
+  .review-icon img{
+      margin: 10px 0;
+  }
+  .about-card{
+      margin-top: 30px;
+      border: solid 0.7px;
+      border-color: white;
+      padding: 25px;
+      display: flex;
+  }
+  .card-content{
+      margin: auto 0px;
+  }
+.about-card img{
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+}
+.card-text{
+    color: var(--white);
+    font-size: 18px;
+    padding: 12px 0px;
+}
+
+.about-card .get-started{
+    color: var(--white);
+    padding: 12px 20px;
+    margin: 8px 0px;
+}
+
+
+.founder-wrapper{
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px 0px;
+}
+.founder-img img{
+    max-width: 300px;
+    max-height: 400px;
+    float: right;
+}
+
+.founder-wrapper h1{
+    color: var(--nectar-accent-color);
+    font-size: 24px;
+}
+.founder-wrapper p{
+    font-weight: 600;
+}
+
+
+
+.remove-list-style li{
+    list-style: none;
+}
+
+
+
+
+
+
+
+.carousel-inner {
+    padding: 1em;
+  }
+  .card {
+
+    border: none;
+  }
+  .carousel-button{
+      display: flex;
+      position: relative;
+      background-color: #00d084;
+      padding: 12px;
+      width: 100px;
+      float: right;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    
+    
+    
+  }
+
+
+  .sites-wrapper{
+     
+  }
+  .sites-wrapper h1{
+      text-align: center;
+      color: var(--dark-gray);
+  }
+  .other-sites{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+  }
+  .sites-link{
+      padding: 20px 0px;
+  }
+  .sites-link a{
+      text-decoration: none;
+      color: var(--amber);
+      
+  }
+
+  #faqs-hero {
+    background-image: url("/public/hero_bg_4.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+    padding-bottom: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+
+    background-size: cover;
+ 
+  }
+  .faqs-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      
+      padding: 80px 0px;
+  }
+  .faqs-top{
+      padding: 100px 0px;
+      display: flex;
+  }
+  .faqs-title h1{
+      padding-top: 30px;
+      font-size: 35px;
+      color: var(--white);
+      font-weight: 700;
+      text-align: center;
+      line-height: 39px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+  .faqs{
+      width: 100%;
+      margin: auto;
+  }
+
+  .accordion-body {
+    padding: 20px 0px ;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+.accordion-button:not(.collapsed) {
+    
+    background-color: #e7f1ff;
+    box-shadow: 0;
+}
+.accordion-button:not(.collapsed) {
+    /* color: #0c63e4; */
+    background-color: #e7f1ff;
+    /* box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%); */
+}
+  .accordion-item {
+    padding: 12px 0px;
+     border:0px   solid rgba(0,0,0,.125); 
+    
+    border-bottom: 1px solid;
+    border-color: var(--cyan-gray);
+   
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--white);
+    outline: 0;
+    box-shadow: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25); 
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: var(--black);
+    background-color: #ffffff !important;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.13);
+}
+
+.faqs{
+    display: flex; 
+    height: auto;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    content: "";
+    background-image: url(/public/plus.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/public/minus.png);
+    transform: rotate(-180deg);
+}
+
+#how-to{
+    background-color: var(--light-gray);
+}
+.steps-wrapper{
+    padding: 30px 0px;
+    display: flex;
+    margin: 0px auto;
+    width: 100%;
+}
+.step-box{
+    padding: 0;
+    margin: 12px 0px;
+}
+.steps-icon{
+    
+    width: 45px;
+    height: 45px;
+}
+.steps-icon img{
+   margin-right: 5px;
+}
+
+.steps-details{
+    padding-top: 2px;
+    padding-left: 10px;
+
+}
+.steps-details h1{
+    font-size: 20px;
+}
+
+
+#the-difference{
+    padding: 50px 0px;
+}
+.difference-wrapper h2{
+    background-color: var(--amber);
+    padding: 7px 20px;
+    font-size: 14px;
+    color: var(--white);
+    width: fit-content;
+    
+}
+
+.difference-wrapper h1{
+    color: var(--dark-gray);
+    font-size: 26px;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+.difference-wrapper p{
+    padding: 10px 0px;
+    color: var(--darkgray);
+}
+
+
+
+
+@media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+  }
+  .card .img-wrapper {
+      max-width: 100%;
+      height: 13em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .card img {
+      max-height: 100%;
+  }
+  @media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+  }

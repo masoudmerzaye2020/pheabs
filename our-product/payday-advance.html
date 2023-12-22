@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/range.css">
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <!-- range slider -->
+    <script src="/js/rangeslider.min.js"></script>
+
+
+    <title>pheabs</title>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <nav class="navbar navbar-expand-xl navbar-fixed-top" id="main_navbar" role="navigation">
+    <div class="container-fluid ">
+      <a id="logo" class="navbar-brand logo" href="#">
+        <img src="/public/logo.svg" alt="logo" width="100" height="50">
+      </a>
+
+      <div id="social-nav" class="social-media">
+        <ul>
+          <li>
+            <img src="/public/facebook.svg" width="30" height="30" alt="facebok icon">
+          </li>
+          <li>
+            <img src="/public/linkedin.svg" width="30" height="30" alt="linkedin">
+          </li>
+          <li>
+            <img src="/public/envelope.svg" width="30" height="30" alt="envelope">
+          </li>
+        </ul>
+      </div>
+
+
+
+
+      <input type="checkbox" class="openSidebarMenu navbar-toggler" id="openSidebarMenu" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us/about-us.html" role="button" data-bs-toggle="dropdown">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/about-us/about-us.html">About Us</a></li>
+              <li><a class="dropdown-item" href="/about-us/FAQs.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="/about-us/how-it-works.html">How it works</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Our Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/our-product/bad-credit-loans.html">Bad Credit loas</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/cash-advances.html">Cash Advance</a></li>
+              <li><a class="dropdown-item" href="/our-product/emergency-cash-loans.html">Emergency Cash
+                  Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/fast-cash.html">Fast Cash</a></li>
+              <li><a class="dropdown-item" href="/our-product/guaranteed-loans.html">Guaranteed Loans</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/installment-loans.html">Installment Loans</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/no-credit-check-loans.html">No Credit Check
+                  Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/online-loans.html">Online Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/payday-advance.html">Payday Advance</a></li>
+              <li><a class="dropdown-item" href="/our-product/personal-loans-for-bad-credit.html">Personal
+                  Loans for Bad Credit</a></li>
+              <li><a class="dropdown-item" href="/our-product/same-day-loans.html">Same Day Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/short-term-loans.html">Short Term Loans</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Payday Loads
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/pay-day/alabama.html">Alabama</a></li>
+              <li><a class="dropdown-item" href="/pay-day/california.html">California</a></li>
+              <li><a class="dropdown-item" href="/pay-day/colorado.html">Colorado</a></li>
+              <li><a class="dropdown-item" href="/pay-day/florida.html">Florida</a></li>
+              <li><a class="dropdown-item" href="/pay-day/illinoise.html">Illinois</a></li>
+              <li><a class="dropdown-item" href="/pay-day/indiana.html">Indiana</a></li>
+              <li><a class="dropdown-item" href="/pay-day/iowa.html">Iowa</a></li>
+              <li><a class="dropdown-item" href="/pay-day/kentucky.html">Kentucky</a></li>
+              <li><a class="dropdown-item" href="/pay-day/las-vegas-and-nevada.html">Las Vegas and
+                  Nevada</a></li>
+              <li><a class="dropdown-item" href="/pay-day/louisiana.html">Louisiana</a></li>
+              <li><a class="dropdown-item" href="/pay-day/maryland.html">Maryland</a></li>
+              <li><a class="dropdown-item" href="/pay-day/new-mexico.html">New Mexico</a></li>
+              <li><a class="dropdown-item" href="/pay-day/ohio.html">Ohio</a></li>
+              <li><a class="dropdown-item" href="/pay-day/tennessee.html">Tennessee</a></li>
+              <li><a class="dropdown-item" href="/pay-day/texas.html">Texas</a></li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/canada.html" role="button">
+              Canada
+            </a>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Business
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/business/invoice-factoring.html">Invoice Factoring</a>
+              </li>
+              <li><a class="dropdown-item" href="/business/merchand-cash-advance.html">Merchand Cash</a>
+              </li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/guides.html" role="button">
+              Guides
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link get-started" aria-current="page" href="#">Get Started</a>
+          </li>
+        </ul>
+
+
+
+      </div>
+    </div>
+  </nav>
+
+  <section id="payday-advance-hero" class="hero bg-3">
+    <div class="hero-container mx-auto">
+      <div class="col-10 mx-auto">
+        <h1 class="hero-title center">Get a Payday Advance Online in Under 24 Hours
+          - Apply with Pheabs Today!</h1>
+      </div>
+
+
+      <div class="col-11 mx-auto">
+        <p class="hero-paragraph center bold">
+          A payday advance can help you borrow $100 to $35,000 until your next payday from work. Pheabs can offer money
+          upfront to pay for any bills or emergencies and the flexibility to repay over 1 to 60 months. With bad credit
+          and no credit check options too, you can check your eligibility today by clicking on the ‘Get Started’ button
+          below!
+        </p>
+      </div>
+      <div class="range-wrapper row col-11 mx-auto my-x ">
+        <div class="col-12 col-md-6 ">
+          <h4 class="white">How Much Do You Need?</h4>
+          <div class="my-lg">
+            <div>
+              <input type="range" min="100" max="5000" step="1" value="3000" unit="$" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <h4 class="white ">How Much Do You Need?</h4>
+          <div class="my-lg">
+            <div>
+              <input type="range" min="12" max="60" step="1" value="30" unit="$" />
+            </div>
+          </div>
+        </div>
+
+        <div class=" my-lg">
+          <a class="link-wrap" href="">
+            <h3 class="button-radius">Get Started >></h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="col-11 mx-auto">
+        <p class="text-small">Representative Example: <br>
+          On an assumed loan amount of $750 over 12 months. Rate of interest 292% (fixed). Representative 171%APR. Total
+          repayment amount $1351.20 and total interest is $601.20. 12 monthly payment of $112.60.*</p>
+        <p class="text-small">* We do not know how many customers take out a loan or the APR, this calculation is based
+          on
+          the mean APR of the lenders we work with</p>
+      </div>
+
+
+    </div>
+  </section>
+  <section class="bg-light-gray">
+    <div class="container py-lg">
+      <div class="main-col">
+
+        <h1 class="title green center">Why Should I Use Pheabs for Payday Advance Loans?</h1>
+        <p class="center">Pheabs offers a completely free way to check your eligibility for a payday advance online. We
+          act as a loans connection service, matching your loan enquiry with the US lender who is most likely to approve
+          you and offer you the best rates. You have no obligation to proceed and can also apply with bad credit. So if
+          you are looking for a payday advance near me, we can help whether you are in California, Texas, Florida or
+          Ohio!</p>
+        <h1 class="title green center">How To Apply for a Payday Advance</h1>
+        <p class="center">Simply complete our online application form in less than 5 minutes and you can receive an
+          instant decision on the screen. We require a few basic details about you, your loan amount, your income,
+          employment, residence and monthly expenses. Subject to further checks, if your loan is approved, it can be
+          funded to your bank account within 1 hour, the same day or next business day.</p>
+      </div>
+      <div class=" d-flex flex-wrap">
+        <div class="col-lg-4 col-12 p-sm">
+          <div class="box">
+            <img src="/public/bulb.svg" width="50%" height="50%" alt="">
+            <h1 class="title orange center">Step 1 - Apply Online</h1>
+            <p class="center">Choose how much you want to borrow and how long for – and complete our loan enquiry form
+              in less than 5 minutes.</p>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 p-sm">
+          <div class="box">
+            <img src="/public/dashboard.svg" width="50%" height="50%" alt="">
+            <h1 class="title orange center">Step 2 - Instant Decision</h1>
+            <p class="center">Receive an instant decision and loan offer on the screen. To proceed with this offer, you
+              can electronically sign our loan agreement in minutes.</p>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 p-sm">
+          <div class="box ">
+            <img src="/public/pig.svg" width="50%" height="50%" alt="">
+            <h1 class="title orange center">Step 3 - Receive Your Advance</h1>
+            <p class="center">If approved, you can receive your payday advance into your checking account within a
+              matter of hours.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="/public/white-bottom-divider.svg" width="100%" height="100%" alt="">
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="main-col">
+        <div class="button-wrap mx-auto py-lg">
+          <a class="link-wrap" href="">
+            <div class="button-started">Get Started
+              <div class="button-icon">
+                <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="153" height="11" rx="5.5" fill="white" />
+                </svg>
+
+                <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                    fill="white" />
+                </svg>
+
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="d-flex flex-wrap">
+          <div class="col-12 col-lg-4">
+            <h1 class="title green">What is a Payday Advance?</h1>
+            <div class="underline"></div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <p>A payday advance refers to an advance on your monthly income and rather than waiting until your next
+              payday from work, you can receive the money upfront. Also known as a cash advance, this type of loan is
+              designed to help you pay for any pressing or immediate expenses, so you can receive the money in one lump
+              sum upfront to pay off your expense and then repay the loan in full on your next payday from work. Some
+              advances last just a few weeks, but some can last a few months, giving you the option to repay over
+              monthly installments. </p>
+          </div>
+        </div>
+        <div class="col-11 col-md-8 col-lg-6 mx-auto youtubelink">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0JfOX7c4EMw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        </div>
+        <div class="button-wrap mx-auto py-md">
+          <a class="link-wrap" href="">
+            <div class="button-started">Get Started
+              <div class="button-icon">
+                <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="153" height="11" rx="5.5" fill="white" />
+                </svg>
+
+                <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                    fill="white" />
+                </svg>
+
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="d-flex flex-wrap py-lg">
+          <div class="col-12 col-lg-4">
+            <img src="/public/payday-advances-eligibility.jpg" width="95%" height="100%" alt="">
+          </div>
+          <div class="col-12 col-lg-8">
+            <h1 class="title orange">
+              What is the Eligibility Criteria for Payday Advance Loans?</h1>
+            <p>The basic criteria to apply with Pheabs is:</p>
+            <ul>
+              <li>Be a US citizen.</li>
+              <li>Over 18 years of age</li>
+              <li>Have a live checking account to receive funds</li>
+              <li>A steady income of at least $800 per month</li>
+              <li>Able to afford monthly repayments</li>
+              <li>No recent bankruptcy</li>
+              <li>Valid cell phone and email address to verify your loan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light-gray">
+    <div class="container py-xl">
+      <div class="main-col">
+        <div class="d-flex flex-wrap">
+          <div class="col-12 col-lg-8">
+            <h1 class="title orange ">What Are Loan Advances Used For?</h1>
+            <p>Payday advances are often used for immediate or emergency expenses, when you do not have quite enough
+              money to tide you over this month. Whether it is to pay any household bills, car repairs, plumbing
+              problems, home repairs or maybe you need to borrow money to pay for something for your children.</p>
+            <p>We can always try to save money but we can never be sure when life’s little problems are going to crop
+              up. From a funeral expense, medical bill or literally a hole in the floor, there are lots of reasons why
+              we may need an extra $300, $500 or $1,000 and a payday advance can help you stay on top of your finances.
+            </p>
+            <h1 class="title orange">Does Pheabs Offer Payday Advances for Bad Credit?</h1>
+            <p>Yes, if you are looking for payday advances for bad credit histories, this is something that we can help
+              with. We work with a number of US lenders and many of them are willing to take a view on poor credit
+              histories. </p>
+            <p>We appreciate that not everyone can have a perfect credit score and there are options available if you
+              have fair or bad credit. Perhaps we can slightly adjust the amount you have requested to borrow or the
+              rate charged will be a little higher. </p>
+            <p>If you have a regular income and stable employment, you can certainly be eligible for the loan you need.
+              In some cases, we may just require proof of income, just to ensure that you can repay your loan without
+              falling into financial difficulty.</p>
+            <h1 class="title orange">Can Pheabs Offer Payday Advances Near Me?</h1>
+            <p>Yes, we are connected to hundreds of local payday stores, but primarily we work with online payday
+              advance lenders, so that you can be matched with the right lender for you, wherever you are in the
+              country. </p>
+            <p>This type of product is closely tied with payday loans, which are offered in 37 US states and we are
+              pleased to offer you an affordable option in areas including Alabama, California, Colorado, Florida, Iowa,
+              Indiana, Illinois, Maryland, Mississippi, Nevada, Ohio Texas, Tennessee and more.</p>
+            <h1 class="title orange">Do You Offer Payday Advance Apps?</h1>
+            <p>Yes, our panel of lenders includes payday advance apps, which allow you to borrow money on demand and
+              keep track of your payments in real-time. Some borrowers prefer to use apps because it gives you access to
+              everything you need directly from your cell phone, including the loan terms, repayment dates and the
+              outstanding balance. Some apps have extra features including advice on saving money, budgeting and topping
+              up your loan if you need to.</p>
+          </div>
+          <div class="col-12 col-lg-4 pt-lg">
+            <img src="/public/payday-advance-loans.png" width="100%" height="100%" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container py-lg">
+      <div class="main-col">
+        <h1 class="title orange">How Can I Get a Fast Payday Advance Loan?</h1>
+        <p>Some payday advances are available on the same day, especially if you are looking to borrow small amounts of
+          $100 or $200. If you pass the criteria and have applied during working hours of 9AM to 5PM, this should help
+          you receive your loan within a few hours or immediately. </p>
+        <p>For larger loans of $1,000 or $2,000, this may require some extra checks to confirm your income and
+          employment and may just take a little longer – but it is still common to get your loan on the same day or next
+          business day.</p>
+        <p>If you are looking for a quick loan, you should always give your real information in terms of your name,
+          contact details and income – so this will avoid the lender having to ask more questions and potentially
+          slowing down your application.</p>
+        <p>In addition, once you have applied, try to stay near to your cell phone and email and be ready to respond to
+          the lender if they have any queries. Being available, especially during regular trading hours can help get
+          your loan funded as soon as possible.</p>
+
+        <h1 class="title orange">Can I Pay Back My Payday Advance in Installments?</h1>
+        <p>Yes, whilst most payday advances are paid in full on your next pay date, there is the option to borrow for as
+          long as 60 months if you would like to. This gives you the flexibility to spread repayment over time, which
+          can be better for borrowing larger amounts of $5,000, $10,000 or more. In this case, you would repay your loan
+          in equal monthly installments, so it would be the same amount being collected from your bank account each
+          month and you will always have the option to repay early if you would like to.</p>
+        <div class="button-wrap py-lg">
+          <a class="link-wrap" href="">
+            <div class="button-started">Get Started
+              <div class="button-icon">
+                <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="153" height="11" rx="5.5" fill="white" />
+                </svg>
+
+                <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                    fill="white" />
+                </svg>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <h1 class="title orange">Can You Offer a Payday Advance with No Credit Checks?</h1>
+        <p>Yes, it is possible to get a payday advance without credit checks – but most US lenders will carry out a
+          credit check to confirm your eligibility. </p>
+        <p>It is possible to get loans with no credit checks, such as applying with a credit union or borrowing from
+          family and friends. Or you can consider using secured loans or title loans that use your car as collateral –
+          where your eligibility is based on the value of your collateral, rather than your credit score.</p>
+        <p>But even if you are trying to avoid credit checks for the fear of being declined – do not worry. The lenders
+          that work with Pheabs are able to take a view on different credit histories, with a number of them
+          specialising in bad credit. Provided that you have a stable employment, regular income and can afford monthly
+          repayments, you can certainly get the loan you need.</p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light-gray">
+    <div class="container py-lg">
+      <div class="main-col">
+        <h1 class="title orange">How is Pheabs Different?</h1>
+        <p>Pheabs has one clear purpose – to help people find affordable loans in the fastest and most effective way
+          possible. Our entire system is designed to match borrowers with the lender who is most likely to accept them
+          and offer the most competitive rates – and so far we have helped thousands of American borrowers to date.</p>
+        <p>We like to give our customers choice every step of the way. You can choose how much you want to borrow, how
+          long for and which day of the month you want to repay on. </p>
+        <p>We offer a fully online application with no upfront fees and no impact to your credit score. You can be rest
+          assured that all of our partner lenders are licensed, responsible and regulated and we will treat your data
+          and information with the utmost confidentiality. To get an instant quote, simply click on ‘Get Started’ below.
+        </p>
+        <div class="button-wrap py-lg">
+          <a class="link-wrap" href="">
+            <div class="button-started">Get Started
+              <div class="button-icon">
+                <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="153" height="11" rx="5.5" fill="white" />
+                </svg>
+
+                <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                    fill="white" />
+                </svg>
+
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container py-lg">
+      <div class="main-col">
+        <h1 class="title orange pt-md">Payday Advance FAQs</h1>
+        <div class="row ">
+
+          <div class="nav nav-links d-flex  flex-wrap col-lg-4 faq-question" id="myTab">
+
+            <a href="#first" class="nav-link  flex-fill  active" data-bs-toggle="tab">
+              How Much Can I Borrow with Pheabs?
+            </a>
+            <a href="#second" class="nav-link flex-fill mx-6" data-bs-toggle="tab">
+              How Fast Can I Get a Payday Advance?
+            </a>
+            <a href="#third" class="nav-link flex-fill " data-bs-toggle="tab">
+              How Long Does The Average Pyaday Advance Last?
+            </a>
+            <a href="#fourth" class="nav-link flex-fill" data-bs-toggle="tab">
+              How Much Does a Payday Advance Cost?
+            </a>
+            <a href="#fifth" class="nav-link flex-fill" data-bs-toggle="tab">
+              Is Pheabs a Direct Lender?
+            </a>
+            <a href="#sixth" class="nav-link flex-fill" data-bs-toggle="tab">
+              Can I Apply if I am Self-Employed or Unedmployed?
+            </a>
+            <a href="#seventh" class="nav-link flex-fill" data-bs-toggle="tab">
+              What if I Cannot Repay My Loan?
+            </a>
+            <a href="#eighth" class="nav-link flex-fill" data-bs-toggle="tab">
+              Do You Charge Any Fees for Applying?
+            </a>
+          </div>
+
+          <div class="tab-content col-lg-8 faq-answer">
+            <div class="tab-pane active" id="first">
+
+              <p> Pheabs offers loans of $100 to $35,000 based on factors such as your income, residential status,
+                credit score and the amount of debts you have outstanding. We may require proof of income and employment
+                for those looking to borrow larger amounts.</p>
+            </div>
+            <div class="tab-pane fade" id="second">
+
+              <p>For borrowing small amounts, it is possible to be approved and funded in less than 1 hour. For larger
+                loans or those that require proof of income and other details, it is typical to receive funds within 24
+                hours or the next business day. </p>
+            </div>
+            <div class="tab-pane fade" id="third">
+
+              <p>The average payday advance lasts around 21 to 28 days and is borrowed upfront and repaid in full on
+                your next pay date. However, we are pleased to offer loans over 3,6,12 months or even as long as 60
+                months if you want to spread repayment over time. </p>
+            </div>
+            <div class="tab-pane fade" id="fourth">
+
+              <p>Depending on the length of your loan and other factors such as your credit score, the cost of your
+                payday advance can range from 36% to 500% APR. If your loan lasts just a few weeks, this is likely to be
+                presented as a high APR, since the loan is compounded as though it lasts for one year – even though this
+                is not the case.</p>
+            </div>
+            <div class="tab-pane fade" id="fifth">
+
+              <p> No, Pheabs is not a direct lender, we act as a broker or middleman for those looking for affordable
+                short-term loans. However, you can have peace of mind that we can match your loan application with a
+                number of responsible US lenders. With no fees for applying, Pheabs can maximise your chances of getting
+                you a loan and once confirmed, you can work directly with your chosen lender every step of the way. </p>
+            </div>
+            <div class="tab-pane fade" id="sixth">
+
+              <p>
+                Yes, you can apply if you are self-employed. Whilst you may need to show proof of a regular income,
+                being self-employed will not impact your chances of being approved and you will be treated like any
+                other customer who is regularly employed.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="seventh">
+
+              <p>If you cannot pay back your loan, you may be charged added interest, late fees and it could negatively
+                impact your credit score. If you feel that you are struggling to repay your loan, you should contact
+                your lender as early as possible who may be able to help. By notifying your lender, they could lower
+                your interest or give you extra time to repay. By avoiding the lender and not responding, this will
+                trigger late fees and any other penalties.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="eighth">
+
+              <p>No. There are no fees for applying with Pheabs. Our site is free to use and always will be. We simply
+                take a small fee from the lender we recommend you to if your application is successful.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="footer">
+    <div class="container">
+      <div class="main-col">
+        <div class="row row-cols-md-2 row-cols-lg-3">
+          <div class="col-8 col-lg-7 footer">
+            <img src="/public/logo.svg" width="130px" height="80px" alt="">
+            <p class="copyright">Copyright @2021 Pheabs. All Rights Reserved</p>
+            <p class="address">Address: <br>Pheabs, 515 ELas Olas Boulevard, Suite 120 , Fort Lauderdale FL 33301</p>
+            <a href="http://"> Find Us on Google Maps</a>
+          </div>
+          <div class="col-8 col-lg-3 footer-link">
+            <h1>Navigation</h1>
+            <ul>
+              <li><a href="http://">About Us</a></li>
+              <li><a href="http://">Apply Now</a></li>
+              <li><a href="http://">How it Works</a></li>
+              <li><a href="http://">Contact Us</a></li>
+              <li><a href="http://">FAQs</a></li>
+              <li><a href="http://">Blog</a></li>
+              <li><a href="http://">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="col-8 col-lg-2 footer-info">
+            <h1>Small Print</h1>
+            <p>Privacy Policy</p>
+            <p>Terms and Condition</p>
+            <p>Email: info@pheabs.com</p>
+            <p>Phone: 1-855-884-6510</p>
+          </div>
+        </div>
+        <div>
+          <div class="footer-info">@2023 Pheabs</div>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="http://">
+                  <img src="/public/facebook.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+              <li>
+                <a href="http://">
+                  <img src="/public/linkedin.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+              <li>
+                <a href="http://">
+                  <img src="/public/youtube.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="block" onclick="topFunction()" id="arrow-up" title="Go to top">
+      <img src="/public/up-arrow.svg" width="20" height="20" alt="arrow-up">
+
+    </button>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/bootnavbar.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/range.js"></script>
+  <script src="/js/gototop.js"></script>
+
+  <script>
+    new bootnavbar();
+  </script>
+</body>
+
+</html>

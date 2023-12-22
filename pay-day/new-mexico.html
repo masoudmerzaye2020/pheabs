@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/range.css">
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <!-- range slider -->
+    <script src="/js/rangeslider.min.js"></script>
+
+
+    <title>pheabs</title>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <nav class="navbar navbar-expand-xl navbar-fixed-top" id="main_navbar" role="navigation">
+    <div class="container-fluid ">
+      <a id="logo" class="navbar-brand logo" href="#">
+        <img src="/public/logo.svg" alt="logo" width="100" height="50">
+      </a>
+
+      <div id="social-nav" class="social-media">
+        <ul>
+          <li>
+            <img src="/public/facebook.svg" width="30" height="30" alt="facebok icon">
+          </li>
+          <li>
+            <img src="/public/linkedin.svg" width="30" height="30" alt="linkedin">
+          </li>
+          <li>
+            <img src="/public/envelope.svg" width="30" height="30" alt="envelope">
+          </li>
+        </ul>
+      </div>
+
+
+
+
+      <input type="checkbox" class="openSidebarMenu navbar-toggler" id="openSidebarMenu" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us/about-us.html" role="button" data-bs-toggle="dropdown">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/about-us/about-us.html">About Us</a></li>
+              <li><a class="dropdown-item" href="/about-us/FAQs.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="/about-us/how-it-works.html">How it works</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Our Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/our-product/bad-credit-loans.html">Bad Credit loas</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/cash-advances.html">Cash Advance</a></li>
+              <li><a class="dropdown-item" href="/our-product/emergency-cash-loans.html">Emergency Cash
+                  Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/fast-cash.html">Fast Cash</a></li>
+              <li><a class="dropdown-item" href="/our-product/guaranteed-loans.html">Guaranteed Loans</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/installment-loans.html">Installment Loans</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/no-credit-check-loans.html">No Credit Check
+                  Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/online-loans.html">Online Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/payday-advance.html">Payday Advance</a></li>
+              <li><a class="dropdown-item" href="/our-product/personal-loans-for-bad-credit.html">Personal
+                  Loans for Bad Credit</a></li>
+              <li><a class="dropdown-item" href="/our-product/same-day-loans.html">Same Day Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/short-term-loans.html">Short Term Loans</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Payday Loads
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/pay-day/alabama.html">Alabama</a></li>
+              <li><a class="dropdown-item" href="/pay-day/california.html">California</a></li>
+              <li><a class="dropdown-item" href="/pay-day/colorado.html">Colorado</a></li>
+              <li><a class="dropdown-item" href="/pay-day/florida.html">Florida</a></li>
+              <li><a class="dropdown-item" href="/pay-day/illinoise.html">Illinois</a></li>
+              <li><a class="dropdown-item" href="/pay-day/indiana.html">Indiana</a></li>
+              <li><a class="dropdown-item" href="/pay-day/iowa.html">Iowa</a></li>
+              <li><a class="dropdown-item" href="/pay-day/kentucky.html">Kentucky</a></li>
+              <li><a class="dropdown-item" href="/pay-day/las-vegas-and-nevada.html">Las Vegas and
+                  Nevada</a></li>
+              <li><a class="dropdown-item" href="/pay-day/louisiana.html">Louisiana</a></li>
+              <li><a class="dropdown-item" href="/pay-day/maryland.html">Maryland</a></li>
+              <li><a class="dropdown-item" href="/pay-day/new-mexico.html">New Mexico</a></li>
+              <li><a class="dropdown-item" href="/pay-day/ohio.html">Ohio</a></li>
+              <li><a class="dropdown-item" href="/pay-day/tennessee.html">Tennessee</a></li>
+              <li><a class="dropdown-item" href="/pay-day/texas.html">Texas</a></li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/canada.html" role="button">
+              Canada
+            </a>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Business
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/business/invoice-factoring.html">Invoice Factoring</a>
+              </li>
+              <li><a class="dropdown-item" href="/business/merchand-cash-advance.html">Merchand Cash</a>
+              </li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/guides.html" role="button">
+              Guides
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link get-started" aria-current="page" href="#">Get Started</a>
+          </li>
+        </ul>
+
+
+
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero bg-3">
+    <div class="hero-container mx-auto">
+      <div class="col-10 mx-auto">
+        <h1 class="hero-title center">Best Payday Loans in New Mexico - Apply Online With Pheabs</h1>
+      </div>
+      <div class="range-wrapper row col-11 mx-auto py-lg ">
+        <div class="col-12 col-md-6 ">
+          <h4 class="white">How Much Do You Need?</h4>
+          <div class="my-lg">
+            <div>
+              <input type="range" min="100" max="5000" step="1" value="3000" unit="$" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <h4 class="white ">How Much Do You Need?</h4>
+          <div class="my-lg">
+            <div>
+              <input type="range" min="12" max="60" step="1" value="30" unit="$" />
+            </div>
+          </div>
+        </div>
+
+        <div class="my-lg">
+          <a class="link-wrap" href="">
+            <h3 class="button-radius">Get Started >></h3>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="col-11 mx-auto">
+        <p class="hero-paragraph center">
+
+          For payday loans in New Mexico, Pheabs can offer the best rates and highest approval across the state incl.
+          Albuquerque, Las Cruces, Rio Rancho and Santa Fe. Complete our online application in less than 5 minutes and
+          receive an instant approval and get funds within 15 minutes, 1 hour, same day or next business day. With bad
+          credit considered and no credit check options, get started using the button below!
+        </p>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+
+
+  <section class="bg-light-gray">
+    <div class="container py-lg">
+      <div class="main-col">
+        <h1 class="title center orange">Can I Get a Payday Loan in New Mexico With Bad Credit?</h1>
+
+        <div class="center">
+          <p>Yes, bad credit loans in New Mexico are available with Pheabs. We have a whole host of lenders who are able
+            to take a view on different credit histories, including those with very bad and poor credit. </p>
+          <p>For starters, payday loans in New Mexico are designed for people with fair or bad credit anyway and those
+            with good credit will typically use personal loans or online installment loans – so our lenders understand
+            your track record is not going to be perfect. However, if you are over 18, have a stable income, employment
+            and are committed to paying on time, there is no reason why you cannot be approved and get the loan you
+            need.</p>
+          <p>In some cases, you may be recommended alternative products such as credit cards, credit unions, apps or
+            secured loans against your car (title loans) – so that you can get the money you are looking for.</p>
+        </div>
+      </div>
+    </div>
+    <img src="/public/white-bottom-divider.svg" width="100%" height="100%" alt="">
+  </section>
+
+
+
+  <section>
+    <div class="container py-lg">
+      <div class="main-col">
+        <div class="d-flex flex-wrap pt-lg">
+          <div class="col-12 col-lg-4">
+            <h1 class="title green pr-lg">Why Use Pheabs For Payday Loans in New Mexico and Albuquerque?</h1>
+            <div class="underline"></div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <p>We are a fully online broker who matches your loan request with the best payday loans companies in New
+              Mexico based on your requirements and with those who are most likely to approve you. There is no need to
+              apply with one lender after the other and face rejection when we have multiple lenders on our panel – and
+              it is completely free to apply and won’t impact your credit score in any way.</p>
+            <p>So if you need $100 or $300 or want to borrow $500 in Albuquerque, Las Cruces, Rio Rancho, Sante,
+              Roswell, Farmington or anywhere else, we are here to help and save you time, money and maximise your
+              chances of approval today.</p>
+          </div>
+        </div>
+        <div class="center py-lg">
+          <div class="col-11 col-md-8 col-lg-6 mx-auto youtubelink">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0JfOX7c4EMw"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+
+          </div>
+
+          <div class="button-wrap mx-auto py-lg">
+            <a class="link-wrap" href="">
+              <div class="button-started">Get Started
+                <div class="button-icon">
+                  <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="153" height="11" rx="5.5" fill="white" />
+                  </svg>
+
+                  <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                      fill="white" />
+                  </svg>
+
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light-gray">
+    <div class="container py-lg">
+      <div class="main-col">
+        <div class="d-flex flex-wrap">
+          <div class="col-12 col-lg-8">
+            <h1 class="title orange">What is The Criteria for Payday Loans in New Mexico?</h1>
+            <p>
+              Our loans are designed to be used for short-term emergencies such as paying for household bills, expenses,
+              damages, rent or car repairs and they are not supposed to be for long-term use.
+
+            </p>
+            <p><b>To be eligible, you must be:</b></p>
+            <ul>
+              <li>Over 18 years of age</li>
+              <li>Full-time US resident</li>
+              <li>Be living in New Mexico or hold residency there (so it is OK if you live outside New Mexico for the
+                time being)</li>
+              <li>Have a social security number</li>
+              <li>Be employed full-time or part-time and earning at least $500 per month
+              </li>
+              <li>Have a US cell number and bank account</li>
+              <li>Can afford to make repayments on time</li>
+
+            </ul>
+
+            <h1 class="title orange py-lg">How Much Does a $500 Payday Loan Cost in New Mexico?</h1>
+            <p>Borrow $500.00 over a two-week term, will cost $75.00 in interest and a total repayment of $575.00 ($15
+              per $100) based on a representative APR of 400%.</p>
+            <h1 class="title orange py-lg">What Are The Terms For Payday Loans in New Mexico and Albuquerque?</h1>
+            <table class="table table-bordered table-striped">
+              <tbody>
+                <tr>
+                  <td class="table-title">Legal Status</td>
+                  <td class="table-desc">Legal</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Loan Amounts</td>
+                  <td class="table-desc">$0 to $2,500</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Loan Term</td>
+                  <td class="table-desc"> 1 to 35 days (can be extended to 130 days)</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Max APR</td>
+                  <td class="table-desc"> 416% APR</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Accept Bad Credit</td>
+                  <td class="table-desc">Yes</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Short Term Options</td>
+                  <td class="table-desc">Yes</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Long Term Options</td>
+                  <td class="table-desc">Yes</td>
+                </tr>
+                <tr>
+                  <td class="table-title">No Credit Check Options</td>
+                  <td class="table-desc">Yes</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Fixed Interest</td>
+                  <td class="table-desc">Yes</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Early Repayment</td>
+                  <td class="table-desc">Yes</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Rollovers</td>
+                  <td class="table-desc">NO</td>
+                </tr>
+
+
+
+
+              </tbody>
+            </table>
+            <h1 class="title orange">Can I Get a Payday Loan in New Mexico With Guaranteed and Instant Approval?</h1>
+            <p>Pheabs offers payday loans with instant approval once you have completed your application form. A
+              competitive offer from one of our direct lenders will be presented on the screen, saying that you can
+              borrow a specific amount at this rate advertised – and you simply have the choice if you would like to
+              proceed or not. </p>
+            <p>When your application is going through, it will be processing thousands of data points to pair you up
+              with the right lender and offer the best offer on the screen.</p>
+            <p>However, we must confirm that although we offer an instant decision, we cannot always offer a guaranteed
+              loan, since your application will always be subject to further checks to ensure that you can afford
+              repayments and will not fall into financial difficulty. Additional checks may be asking for documentation
+              to confirm your income or employment or a quick call on the phone to the lender to confirm some details.
+
+            </p>
+
+            <h1 class="title orange">Do You Offer Payday Loans in New Mexico With No Credit Checks?</h1>
+            <p>Yes, it is possible to get a payday loan in New Mexico without credit checks and this may be better
+              suited for those with bad credit.
+
+            </p>
+            <p>To be eligible for this, you may have to use valuable collateral such as your car or other vehicle to
+              borrow the money you need. We may suggest other alternative products from banks, credit unions or apps
+              that do not carry out credit checking in order to approve your loan.</p>
+          </div>
+          <div class="col-12 col-lg-4 tablet-hide pl-lg">
+            <img src="/public/pheabs-online-loans.png" width="100%" height="100%" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container py-lg">
+      <div class="main-col">
+        <div class="col-12 col-lg-8 mx-auto">
+          <img src="/public/payday-loans-in-alabama.png" width="100%" height="100%" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light-gray">
+    <div class="container py-xl">
+      <div class="main-col">
+        <div class="d-flex flex-wrap">
+          <div class="col-12 col-lg-6">
+            <img src="/public/Pheabs-payday-loans-Alabama-banner.png" width="95%" height="auto" alt="">
+          </div>
+          <div class="col-12 col-lg-6">
+            <h1 class="title orange">What Happens if I Cannot Repay My Loan On Time?</h1>
+            <p>If you do not pay your loan on the agreed dates, you will typically receive a follow up emails, SMS or
+              call from the lender – and this will typically incur late fees, additional interest added to your loan
+              amount and it will cause your credit score to fall. The sooner you can make repayment or pay off your
+              loan, the less fees will be incurred and there will be less damage to your credit score.</p>
+            <p>By not speaking to the lender about any payment issues you are having, they will need to keep messaging
+              or calling you to chase repayment and this could ultimately lead to sending you a court order. With this
+              in mind, you should try to speak to your lender as soon as you know you may have trouble repaying because
+              they may be able to help by offering an installment plan or similar.</p>
+            <div class="button-wrap py-lg">
+              <a class="link-wrap" href="">
+                <div class="button-started">Get Started
+                  <div class="button-icon">
+                    <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect width="153" height="11" rx="5.5" fill="white" />
+                    </svg>
+
+                    <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                        fill="white" />
+                    </svg>
+
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container py-lg">
+      <div class="main-col">
+        <h1 class="title orange center">Where Can I Find Payday Loans in New Mexico, NM?</h1>
+        <p class="center">We offer loans in all areas including Agua Fria and Eunice, Alamogordo, Albuquerque,
+          Angustura, Anthony, Artesia, Aztec, Bayard, Belen, Bernalillo, Bloomfield, Boles Acres and Arroyo Seco, Bosque
+          Farms, Cannon AFB and San Ysidro CDP, Carlsbad, Center Point, Chaparral, Chimayo, Clayton, Clovis, Corrales,
+          Crouch Mesa, Crownpoint, Deming, Dulce, Edgewood, El Cerro, El Cerro Mission, El Valle de Arroyo Seco,
+          Eldorado at Santa Fe, Española, Farmington, Flora Vista, Gallup, Grants, Hobbs, Holloman AFB, Jal, Jarales,
+          Jemez Pueblo, Keeler Farm, Kirtland AFB, La Cienega, La Luz, La Mesilla, La Plata, Las Cruces, Las Maravillas,
+          Las Vegas, Lee Acres, Little Walnut Village, Lordsburg, Los Alamos, Los Chaves, Los Lunas, Los Ranchos de
+          Albuquerque, Lovington, Meadow Lake, Mesilla, Milan, Moriarty, Nambe, Navajo, North Hobbs, North Valley,
+          Paradise Hills, Peralta, Placitas CDP, Pojoaque, Portales, Ranchos de Taos, Raton, Rio Communities, Rio
+          Rancho, Roswell, Ruidoso, Ruidoso Downs, Sandia Heights, Santa Fe, Santa Rosa, Santa Teresa, Santo Domingo
+          Pueblo, Shiprock, Silver City, Socorro, South River, South Valley, Sunland Park, Taos, Thoreau, Tres Arroyos,
+          Truth or Consequences, Tucumcari, Tularosa, University Park, Vado, Valencia CDP, West Hammond, White Rock,
+          Zuni Pueblo. </p>
+        <div class="map-frame">
+          <iframe loading="lazy" style="border: 0px; opacity: 1; visibility: visible;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380450.0605605734!2d-106.02606850000001!3d34.166273000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87185043e79852a9%3A0x46bf6e1a63359eba!2sNew%20Mexico%2C%20USA!5e0!3m2!1sen!2suk!4v1670250119203!5m2!1sen!2suk"
+            width="100%" height="100%" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+
+        <div class="center">
+          <h1 class="title orange center py-lg">How To Apply For a New Mexico Payday Loan in 3 Simple Steps</h1>
+          <p><b>Step 1 – Choose how much you wish to borrow and how long for</b></p>
+          <p class="py-md">If you need money for an emergency, find the right amount to cover any expenses and ensure
+            that you can cover the cost of any repayments. Are you able to repay the loan right away on your next payday
+            or would you prefer to stretch payment over several weeks and months.</p>
+          <p class="pt-lg"><b>Step 2 – Get an instant decision and complete your online loan agreement</b></p>
+          <p>You can proceed by agreeing to the loan decision on the screen and you can electronically sign your loan
+            agreement using an email link and unique SMS code that is sent to your cell phone.</p>
+          <p class="pt-lg"><b>Step 3 – Await further checks and receive your funds</b></p>
+          <p>Subject to further credit and affordability checks, the loan can sent to your bank account within a few
+            minutes, 1 hour, same day or next business day!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="bg-light-yellow">
+    <div class="container py-lg">
+      <div class="main-col">
+        <h1 class="title black center">FAQs on New Mexico Payday Loans</h1>
+        <div class="row ">
+
+          <div class="nav nav-links d-flex  flex-wrap col-lg-4 faq-question" id="myTab">
+
+            <a href="#first" class="nav-link  flex-fill  active" data-bs-toggle="tab">
+              How Much Can I Borrow With Pheabs?
+            </a>
+            <a href="#second" class="nav-link flex-fill mx-6" data-bs-toggle="tab">
+              How Long Can I Borrow For?
+            </a>
+            <a href="#third" class="nav-link flex-fill " data-bs-toggle="tab">
+              Are Payday Loans Legal in New Mexico?
+            </a>
+            <a href="#fourth" class="nav-link flex-fill" data-bs-toggle="tab">
+              Do I Need to Apply Online or In Store?
+            </a>
+            <a href="#fifth" class="nav-link flex-fill" data-bs-toggle="tab">
+              What is The Maximum Number of Payday Loans Allowed in New Mexico?
+            </a>
+            <a href="#sixth" class="nav-link flex-fill" data-bs-toggle="tab">
+              What is The Price Cap for Payday Loans in New Mexico?
+            </a>
+            <a href="#seventh" class="nav-link flex-fill" data-bs-toggle="tab">
+              How Fast Can I Get My Loan?
+            </a>
+            <a href="#eight" class="nav-link flex-fill" data-bs-toggle="tab">
+              Can I Repay My Loan Early?
+            </a>
+          </div>
+
+          <div class="tab-content col-lg-8 faq-answer">
+            <div class="tab-pane active" id="first">
+
+              <p> Pheabs offers $100 to $2500 in the state of New Mexico and the amount you can borrow is based on your
+                income, affordability and amount of debt that you have open at the moment.</p>
+            </div>
+            <div class="tab-pane fade" id="second">
+
+              <p> Your loan can be open for up to 35 days, with some lenders giving you the option to repay over 3,6 or
+                12 months or longer.</p>
+            </div>
+            <div class="tab-pane fade" id="third">
+
+              <p>Yes, payday loans are legal in New Mexico and there are numerous regulations in place to protect
+                consumers including a maximum price cap on interest rates, a limit to the number of loans you can have
+                open and no rollovers allowed. </p>
+            </div>
+            <div class="tab-pane fade" id="fourth">
+
+              <p>Pheabs offers a fully online experience, working with direct lenders who will process and fund your
+                loan. There are a number of physical stores in the state of New Mexico where you can visit on the day
+                and receive funds if successful.</p>
+            </div>
+            <div class="tab-pane fade" id="fifth">
+
+              <p> Living in New Mexico, there may be a limit of having only 1 or 2 payday loans open at any time. </p>
+            </div>
+            <div class="tab-pane fade" id="sixth">
+
+              <p>The maximum APR is 416% and this means that your loan will never be higher than this – and in many
+                cases, the interest rate charged will be much lower and this is typically based on your credit score.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="seventh">
+
+              <p>We process loan applications instantly and if approved, small amounts can be funded within 15 minutes
+                to 1 hour, with some other loans able to be transferred on the same day or next business day.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="eight">
+
+              <p>Yes, you can always contact the lender directly and you have the right to repay the loan early, at any
+                time. Paying off the loan early will often result in paying less interest overall, since less is
+                accruing overall.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="footer">
+    <div class="container">
+      <div class="main-col">
+        <div class="row row-cols-md-2 row-cols-lg-3">
+          <div class="col-8 col-lg-7 footer">
+            <img src="/public/logo.svg" width="130px" height="80px" alt="">
+            <p class="copyright">Copyright @2021 Pheabs. All Rights Reserved</p>
+            <p class="address">Address: <br>Pheabs, 515 ELas Olas Boulevard, Suite 120 , Fort Lauderdale FL 33301</p>
+            <a href="http://"> Find Us on Google Maps</a>
+          </div>
+          <div class="col-8 col-lg-3 footer-link">
+            <h1>Navigation</h1>
+            <ul>
+              <li><a href="http://">About Us</a></li>
+              <li><a href="http://">Apply Now</a></li>
+              <li><a href="http://">How it Works</a></li>
+              <li><a href="http://">Contact Us</a></li>
+              <li><a href="http://">FAQs</a></li>
+              <li><a href="http://">Blog</a></li>
+              <li><a href="http://">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="col-8 col-lg-2 footer-info">
+            <h1>Small Print</h1>
+            <p>Privacy Policy</p>
+            <p>Terms and Condition</p>
+            <p>Email: info@pheabs.com</p>
+            <p>Phone: 1-855-884-6510</p>
+          </div>
+        </div>
+        <div>
+          <div class="footer-info">@2023 Pheabs</div>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="http://">
+                  <img src="/public/facebook.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+              <li>
+                <a href="http://">
+                  <img src="/public/linkedin.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+              <li>
+                <a href="http://">
+                  <img src="/public/youtube.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="block" onclick="topFunction()" id="arrow-up" title="Go to top">
+      <img src="/public/up-arrow.svg" width="20" height="20" alt="arrow-up">
+
+    </button>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/bootnavbar.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/range.js"></script>
+  <script src="/js/gototop.js"></script>
+
+  <script>
+    new bootnavbar();
+  </script>
+</body>
+
+</html>

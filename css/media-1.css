@@ -1,0 +1,138 @@
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+ /*    body {
+        background-color: red;
+    } */
+    .logo{
+        margin-left: 6px;
+    }
+    .sidebarIconToggle{
+        margin-right: 20px;
+    }
+    .hero-conatiner{
+        width: 320px;
+    }
+    .hero-title{
+        font-size: 24px;
+    }
+    .hero-paragraph{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .google-icon{
+        max-width: 200px;
+    }
+    .py{
+        padding: 30px 0px;
+    }
+    .youtubelink{
+        width: 300px;
+        height: 180px;
+        margin: auto;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+   /*  body {
+        background-color: yellow;
+    } */
+
+    .logo{
+        margin-left: 26px;
+    }
+    .sidebarIconToggle{
+        margin-right: 30px;
+    }
+    .hero-continer{
+        width: 300px;
+    }
+    .youtubelink{
+        width: 500px;
+        height: 300px;
+        margin: auto;
+    }
+    .hero-container{
+        max-width: 650px;
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+   /*  body {
+        background-color: blue;
+    } */
+
+    .logo{
+        margin-left: 30px;
+    }
+    .sidebarIconToggle{
+        margin-right: 30px;
+    }
+    .hero-container{
+        width: 700px;
+    }
+
+    .youtubelink{
+        width: 700px;
+        height: 350px;
+        margin: auto;
+    }
+    .main-col{
+        max-width: 900px;
+        
+    }
+    
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+   /*  body {
+        background-color: green;
+    } */
+    .logo{
+        margin-left: 80px;
+    }
+    .social-media{
+        margin-right: 2px;
+    }
+    .hero-container{
+        width: 1024px;
+    }
+
+    .youtubelink{
+        width: 800px;
+        height: 450px;
+        margin: auto;
+    }
+    .main-col{
+        max-width: 1100px;
+        
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+   /*  body {
+        background-color: white;
+    } */
+    .logo{
+        margin-left: 120px;
+    }
+    .social-media{
+        margin-right: 120px;
+    }
+    .hero-container{
+        width: 1200px;
+    }
+
+    .youtubelink{
+        width: 800px;
+        height: 450px;
+        margin: auto;
+    }
+    .main-col{
+        max-width: 1240px;
+        
+    }
+}

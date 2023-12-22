@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+       <link rel="stylesheet" href="/css/home.css" />
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/range.css"> 
+    
+    
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/jquery-ui.min.js"></script>
+        <!-- range slider -->
+        <script src="/js/rangeslider.min.js"></script>
+    
+    
+        <title>pheabs</title>
+    
+    </head>
+
+<style>
+    .form-input{
+        background-color: rgb(96, 93, 152);
+        opacity: 0.5;
+        border-color: rgb(106, 102, 171);
+    }
+    .form-input .focused{
+        background-color: red;
+    }
+    .accordion-button {
+        padding: 4px 5px;
+    }
+
+    .accordion-button:focus {
+    z-index: 3;
+    border-color: var(--white);
+    outline: 0;
+    box-shadow: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25); 
+    }
+
+    .accordion-button:after {
+        order: -1;
+        margin-left: 5px;
+        margin-right: 0.5em;
+    }
+
+    /* Custom style */
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+        transform: scale(.7) !important;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    }
+
+    .accordion-item {
+        margin: 10px 0px;
+        border: 1px solid rgba(128, 128, 128, 0.121);
+        padding: 0px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: orange !important;
+    }
+
+    .accordion-button.collapsed {
+        background-color: rgba(0, 0, 0, .045);
+    }
+/*  addddd */
+
+
+
+
+</style>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-fixed-top" id="main_navbar" role="navigation">
+        <div class="container-fluid ">
+            <a id="logo" class="navbar-brand logo" href="#">
+                <img src="/public/logo.svg" alt="logo" width="100" height="50">
+            </a>
+
+            <div id="social-nav" class="social-media">
+                <ul>
+                    <li>
+                        <img src="/public/facebook.svg" width="30" height="30" alt="facebok icon">
+                    </li>
+                    <li>
+                        <img src="/public/linkedin.svg" width="30" height="30" alt="linkedin">
+                    </li>
+                    <li>
+                        <img src="/public/envelope.svg" width="30" height="30" alt="envelope">
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <input type="checkbox" class="openSidebarMenu navbar-toggler" id="openSidebarMenu" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/about-us/about-us.html" role="button"
+                            data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about-us/about-us.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="/about-us/FAQs.html">FAQ</a></li>
+                            <li><a class="dropdown-item" href="/about-us/how-it-works.html">How it works</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Our Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/our-product/bad-credit-loans.html">Bad Credit loas</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/our-product/cash-advances.html">Cash Advance</a></li>
+                            <li><a class="dropdown-item" href="/our-product/emergency-cash-loans.html">Emergency Cash
+                                    Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/fast-cash.html">Fast Cash</a></li>
+                            <li><a class="dropdown-item" href="/our-product/guaranteed-loans.html">Guaranteed Loans</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/our-product/installment-loans.html">Installment
+                                    Loans</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/our-product/no-credit-check-loans.html">No Credit Check
+                                    Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/online-loans.html">Online Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/payday-advance.html">Payday Advance</a></li>
+                            <li><a class="dropdown-item" href="/our-product/personal-loans-for-bad-credit.html">Personal
+                                    Loans for Bad Credit</a></li>
+                            <li><a class="dropdown-item" href="/our-product/same-day-loans.html">Same Day Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/short-term-loans.html">Short Term Loans</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Payday Loads
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pay-day/alabama.html">Alabama</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/california.html">California</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/colorado.html">Colorado</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/florida.html">Florida</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/illinoise.html">Illinois</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/indiana.html">Indiana</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/iowa.html">Iowa</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/kentucky.html">Kentucky</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/las-vegas-and-nevada.html">Las Vegas and
+                                    Nevada</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/louisiana.html">Louisiana</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/maryland.html">Maryland</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/new-mexico.html">New Mexico</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/ohio.html">Ohio</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/tennessee.html">Tennessee</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/texas.html">Texas</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/canada.html" role="button">
+                            Canada
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Business
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/business/invoice-factoring.html">Invoice Factoring</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/business/merchand-cash-advance.html">Merchand Cash</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/guides.html" role="button">
+                            Guides
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link get-started" aria-current="page" href="#">Get Started</a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="invoice-hero" class="hero bg-1">
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="d-flex flex-wrap" style="padding-top: 280px;">
+                    <div class="col-12 col-lg-6 my-auto">
+                        <h1 class="white">
+                            Merchant Cash Advances - Apply For $3,000 To $500,000
+                        </h1>
+                        <p class="hero-paragraph">As a Merchant Cash Advance broker, we can match your loan requirements with the best lenders across the US, with bad credit and no credit check options too. Borrow $3,000 to £500,000 over 3 to 12 months to get working capital for your business. Complete our form to start your application today!</p>
+                        <div class="review-icon col-8 ">
+                            <img src="/public/Five-Star-Google-Review.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 px-lg">
+                        <form>
+                            <!-- company name input -->
+                            <div class="form-outline mb-4">
+                             <label for="exampleInputEmail1" class="form-label hero-paragraph"><b>Company Name</b> <span style="color: red;">*</span></label>
+                              <input type="text" id="form4Example1" class="form-control form-input" />
+                              <label class="form-label white" for="form4Example1">Registered Name</label>
+                            </div>
+                            <!-- Name input -->
+                            <div class="form-outline mb-4">
+                                <label for="exampleInputEmail1" class="form-label hero-paragraph"><b>Your Name Name</b> <span style="color: red;">*</span></label>
+                                 <input type="text" id="form4Example1" class="form-control form-input" />
+                                 <label class="form-label white" for="form4Example1">Full Name</label>
+                               </div>
+                          
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label hero-paragraph" for="form4Example2"><b>Your Email address</b> <span style="color: red;">*</span></label>
+                              <input type="email" id="form4Example2" class="form-control form-input" />
+                              
+                            </div>
+
+                            <!-- contact num -->
+                            <div class="form-outline mb-4">
+                                <label for="exampleInputEmail1" class="form-label hero-paragraph"><b>Phone </b></label>
+                                 <input type="number" id="form4Example1" class="form-control form-input" />
+                              
+                               </div>
+                          
+                            <!-- Message input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label hero-paragraph" for="form4Example3"><b>What do you Need? <span style="color: red;">*</span></b></label>
+                              <textarea class="form-control form-input" id="form4Example3" rows="4"></textarea>
+                             
+                            </div>
+                          
+                            <!-- Checkbox -->
+                            <label class="form-check-label hero-paragraph my-2" for="form4Example4">
+                                Consent<span style="color: red;">*</span>
+                              </label> 
+                            <div class="form-check d-flex white mb-4">
+                                
+                               
+                              <input style="display: block;" class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                              <label class="form-check-label" for="form4Example4">
+                                I agree to be contacted by Pheabs to discuss my application
+                              </label>
+                            </div>
+
+                            <div class="col-12">
+                                <button style="width: 100%; padding: 6px 0px;" type="submit" class=" button-radius">Send</button>
+                                
+                              </div>
+                          
+                          </form>
+                    </div>
+        
+                
+        
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="center">
+                    <h1 class="title green pt-lg">What is a Merchant Cash Advance?</h1>
+                    <p>A merchant cash advance (MCA) gives your company an upfront sum of cash which you can use for
+                        everyday costs, expenses and growth opportunities. </p>
+                    <p>You can repay using future debit and credit card sales, with lenders taking a small fee of
+                        interest on top. Or if you prefer, you can pay back in monthly installments over 3 to 12 months.
+                    </p>
+                    <p>This is an alternative type of business loan, designed to give small and large companies some
+                        working capital and it is ideal for places that take regular credit card payments and need some
+                        cash flow including attorneys, dentists, doctors, gas stations, lawyers, pharmacies,
+                        restaurants, retailers and more.</p>
+                    <p>The loan is unsecured, so you are not required to give up or potentially lose any type of
+                        collateral, which also makes the application process quicker and can be funded within 24 hours.
+                    </p>
+                    <div class="button-wrap mx-auto py-lg">
+                        <a class="link-wrap" href="">
+                            <div class="button-started">Get Started
+                                <div class="button-icon">
+                                    <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="153" height="11" rx="5.5" fill="white" />
+                                    </svg>
+
+                                    <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="/public/gray-bottom-divider.svg" width="100%" height="100%" alt="">
+    </section>
+
+    <section class="bg-light-gray">
+        <div class="container py-lg">
+            <div class="main-col ">
+                <div class="col-12 col-lg-8 mx-auto">
+                    <h1 class="title black center">Key Features</h1>
+                    <table class="table table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td class="table-title">Min Loan Amount</td>
+                                <td class="table-desc">$3,000</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Max Loan Amount</td>
+                                <td class="table-desc">$500,000</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Duration</td>
+                                <td class="table-desc">Until the invoice is paid -30,120 days or more</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Repayments</td>
+                                <td class="table-desc">The lender takes directly from the client</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Eligibility</td>
+                                <td class="table-desc">Min. 3 months bank statement</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Interest Rates</td>
+                                <td class="table-desc">1% to 5%</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">APR</td>
+                                <td class="table-desc">50% to 79%</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Bad Creit</td>
+                                <td class="table-desc">Ok</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">24 Hour Funding</td>
+                                <td class="table-desc">Yes</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <img src="/public/white-bottom-divider.svg" width="100%" height="100%" alt="">
+    </section>
+
+    <section>
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="col-11 col-md-8 col-lg-6 mx-auto youtubelink">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0JfOX7c4EMw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+        <img src="/public/gray-bottom-divider.svg" width="100%" height="100%" alt="">
+    </section>
+
+    <section class="bg-light-gray">
+        <div class="container py-lg">
+            <div class="main-col">
+                <h1 class="title green center py-lg">How To Apply For a Merchant Cash Advance in 3 Steps</h1>
+                <div class=" d-flex flex-wrap">
+                    <div class="col-lg-4 col-12 p-sm">
+                        <div class="box">
+                            <img src="/public/apply-form.png" width="60%" height="60%" alt="">
+                            <h1 class="title orange center">Step 1</h1>
+                            <p class="center">Complete our form provided or click on ‘apply now’ to tell us your
+                                requirements. Our team will respond within minutes and will request 3 months of bank
+                                statements and other records. You can also grant us secure access to your bank account’s
+                                transactional data to speed things up.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 p-sm">
+                        <div class="box">
+                            <img src="/public/decision.png" width="50%" height="50%" alt="">
+                            <h1 class="title orange center">Step 2</h1>
+                            <p class="center">Our advisors will process your application by reviewing your records and
+                                we aim to fund your loan within 24 hours.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 p-sm">
+                        <div class="box ">
+                            <img src="/public/funded-1.png" width="60%" height="60%" alt="">
+                            <h1 class="title orange center">Step 3</h1>
+                            <p class="center">Success! You have been funded and payments will be automatically collected
+                                from your business’s daily or weekly debit and credit card sales or from your bank
+                                account if you prefer.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="/public/white-bottom-divider.svg" width="100%" height="100%" alt="">
+    </section>
+
+    <section>
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="button-wrap mx-auto py-lg">
+                    <a class="link-wrap" href="">
+                        <div class="button-started">Get Started
+                            <div class="button-icon">
+                                <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="153" height="11" rx="5.5" fill="white" />
+                                </svg>
+
+                                <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                                        fill="white" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-7 mx-auto">
+                    <img src="/public/merchant-cash-advance-example.png" width="100%" height="100%" alt="">
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-lg-6 p-md">
+                        <h1 class="title green center">What is the Eligibility for a Merchant Cash Advance?</h1>
+                        <p>Merchant cash advances are available for businesses of all sizes and the eligibility criteria
+                            is a lot more basic and straightforward than your traditional business loan. </p>
+                        <p><b>Although this may vary between lenders, as a guideline, you should have:</b></p>
+                        <ul>
+                            <li>2 years of business history (been trading for 2 years)</li>
+                            <li> A credit score above 525 (business or individual owner)</li>
+                            <li>A regular flow of credit card transactions</li>
+                            <li>Annual cash flow of a minimum of $180,000 (may vary between lenders)</li>
+
+                        </ul>
+                        <h1 class="title green center">Merchant Cash Advance Example</h1>
+                        <p>Betty’s Hair Salon borrows $20,000 at a factor rate of 1.5 over 12 months. She will owe a
+                            simple 20,000 x 1.5, which is $30,000 taken directly from her future credit card and debit
+                            card sales.</p>
+                        <h1 class="title center green pt-lg">How Much Does a Merchant Cash Advance Cost?</h1>
+                        <p>Unlike a traditional business loan which is charged around 3% to 7% monthly interest, MCA’s
+                            uses a factor rate typically of 1.0 to 1.5, so you just take the amount you have borrowed
+                            and times it by 1.0 or 1.5. This makes merchant cash advances cost quite a bit, similar to
+                            an APR of around 200% to 350% depending on your business, industry and credit score.</p>
+
+
+
+                    </div>
+                    <div class="col-12 col-lg-6 p-md">
+                        <h1 class="title green center">What Information Do I Need to Provide To Apply?</h1>
+                        <p>Your application will be processed on a case-by-case basis and you will typically need to
+                            provide the following:</p>
+                        <ul>
+                            <li>3 months worth of business bank statements</li>
+                            <li>Owner’s proof of identity – driver’s license or passport</li>
+                            <li>1 to 2 years business tax returns</li>
+                            <li>A business credit check</li>
+
+
+                        </ul>
+                        <p>Having this information on hand and ready to send will certainly speed up your application.
+                        </p>
+                        <p>If you are looking for merchant cash advances with no bank statements, this may be possible
+                            if you can provide some other information such as consistent credit card statements, a good
+                            credit history and profitable business. However, in most cases, the lenders will request at
+                            least 3 months worth of bank statements to begin your application.</p>
+                        <p>If you are looking for merchant cash advances with bad credit, this is something that we can
+                            help with. If you are generating consistent sales through credit cards and debit cards for
+                            your business – whether you are a hotel, restaurant or shop – the lender is able to collect
+                            repayments from future sales, which gives them a lot of security. But provided you meet the
+                            other criteria, we can certainly help you get the loan you need.</p>
+                        <div class="button-wrap mx-auto py-lg">
+                            <a class="link-wrap" href="">
+                                <div class="button-started">Get Started
+                                    <div class="button-icon">
+                                        <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="153" height="11" rx="5.5" fill="white" />
+                                        </svg>
+
+                                        <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <img src="/public/gray-bottom-divider.svg" width="100%" height="100%" alt="">
+    </section>
+
+    <section class="bg-light-gray">
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-lg-6 p-md">
+                        <h1 class="title green center">What Companies Are Merchant Cash Advances Best For?</h1>
+                        <p>Accountants, Attorneys, Barbershops, Beauty Salons, Cafes, Dentists, Doctors, Fashion
+                            Retailers, Gas Stations, Grocery Stories, Gyms, Hairdressers, Hotels, Lawyers, Pharmacies,
+                            Restaurants, Retailers, Ski Lodges, Startups, Supermarkets, Travel Agencies, Tech Companies,
+                            Water Parks</p>
+                        <h1 class="title green center pt-lg">Useful Guides</h1>
+                        <ul class="center useful-guides">
+                            <li><a href="">How To Borrow Money For Your Business</a></li>
+                            <li><a href="">How To Save Money as a Business</a></li>
+                            <li><a href="">Should You Borrow From Family and Friends?</a></li>
+                            <li><a href="">The Best Way To Repay Debts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6 p-md">
+                        <h1 class="title green center">Where Can I Find Merchant Cash Advances?</h1>
+                        <p>We are a merchant cash advance broker across the whole of the USA, for all states, including:
+                            Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida,
+                            Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine,
+                            Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska,
+                            Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio,
+                            Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee,
+                            Texas, Utah, Vermont, Virginia, Washington, Washington DC, West Virginia, Wisconsin, Wyoming
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="/public/white-bottom-divider.svg" width="100%" height="100%" alt="">
+    </section>
+
+
+    <section>
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-lg-6">
+                        <h1 class="green center green">What is a Merchant Cash Advance Loan Used For?</h1>
+                        <ul>
+                            <li>Growth opportunities</li>
+                            <li>Marketing and advertising</li>
+                            <li>Equipment financing</li>
+                            <li>Buying inventory and stock in bulk</li>
+                            <li>Hiring new employees</li>
+                            <li>Investing in staff training</li>
+                            <li>Keeping your cash flow in check</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h1 class="title green center">Can I Get a Merchant Cash Advance On The Same Day?</h1>
+                        <p>Yes, absolutely, you can get a same day merchant cash advance, or within 24 hours. You can
+                            speed this up by having at least 3 bank statements ready to go and any other relevant
+                            information about your business’s revenue and cash position. You can even grant us access to
+                            your bank account’s transactional data for a quick process. And be sure to make yourself
+                            available by email or phone for any follow up questions that our team may have.</p>
+                    </div>
+                </div>
+
+                <h1 class="title green center pt-lg">FAQs</h1>
+
+
+
+                <div class="accordion" id="myAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne">how Are The Rates Determined For Merchand Cash
+                                Advances?</button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse ">
+                            <div class="card-body">
+                                <p>The cost of a merchant cash advance loan is determined through a factor rate, ranging
+                                    from 1.0 to 1.5 throughout the duration of the loan. This fee will depend on various
+                                    factors including your industry, credit score, volume of sales, track record,
+                                    revenue and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo">Are Merchand Cash Advance Loans Regulated?</button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse ">
+                            <div class="card-body">
+                                <p>Merchant cash advances are regulated by the Uniform Commercial Code in each state,
+                                    which is not subject to National and Federal Regulation. It is always important to
+                                    take extra steps to confirm that the company you are working with is legitimate and
+                                    is offering affordable rates – and this is on you the customer to do your due
+                                    diligence because of limited regulation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree">Is APR Used By Merchant Cash Advance Lenders?</button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse">
+                            <div class="card-body">
+                                <p>No, merchant cash advance companies do not use APR, which can make it hard to compare
+                                    to other mainstream, off the shelf financial products such as business loans.
+                                    However, when calculated as an APR, it is around 200% to 350%, which is on the high
+                                    side and closer to products such as payday loans. It is important to note that the
+                                    APR is inflated due to the short term nature of the product (being often less than 1
+                                    year), being unsecured and its fast availability.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#four">Can I Get a Merchant Cash Advance With No Credit Check?</button>
+                        </h2>
+                        <div id="four" class="accordion-collapse collapse">
+                            <div class="card-body">
+                                <p> If you are looking for merchant cash advances without credit checks, this might be
+                                    tricky, since it is a typical requirement of any type of business loan, MCAs
+                                    included. However, you may be able to bypass this with some lenders if you are able
+                                    to give access to your bank statements and accounts and have a steady volume of cash
+                                    and sales coming into the business. This may be considered on a case-by-case basis
+                                    by the lender.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#five">Is It Cheaper to Pay Off Early?</button>
+                        </h2>
+                        <div id="five" class="accordion-collapse collapse">
+                            <div class="card-body">
+                                <p>Yes and no. Overall there is less debt that is accrued, because the loan is not open
+                                    for as long. But the APR is higher if you pay off sooner. So if you are paying off
+                                    your merchant cash loan early, it is best to do it several months earlier (such as 6
+                                    to 12 months) because 1 or 2 months won’t make much of a difference.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#six">Do I Need To Use Collateral To Be Eligible?</button>
+                        </h2>
+                        <div id="six" class="accordion-collapse collapse">
+                            <div class="card-body">
+                                <p>No, the loan is unsecured, meaning that you do not require any assets or collateral
+                                    to be eligible for a loan – and therefore you do not risk losing this if your loan
+                                    is in arrears. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#seven">What Happens if I Cannot Repay?</button>
+                        </h2>
+                        <div id="seven" class="accordion-collapse collapse">
+                            <div class="card-body">
+                                <p>If you fail to keep up with repayments or stop receiving any cash into the business,
+                                    you may incur additional fees, penalties and it may negatively impact your credit
+                                    score. There is less risk for the lender because they are taking a percentage of
+                                    future sales into your business. Assuming you have a steady flow of customers and
+                                    money coming into the business, you should be able to keep up with payments.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#eight">Do You Work With Direct Lenders?</button>
+                        </h2>
+                        <div id="eight" class="accordion-collapse collapse">
+                            <div class="card-body">
+                                <p>Yes, we work with a number of direct lenders in the USA who are licensed and
+                                    experienced with handling all kinds of MCA enquiries and are used to funding loans
+                                    within 24 hours. We offer a completely free service and will not pass on your
+                                    details to any other companies or providers without your permission. There are no
+                                    fees and it will not impact your credit score in any way.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="row row-cols-md-2 row-cols-lg-3">
+                    <div class="col-8 col-lg-7 footer">
+                        <img src="/public/logo.svg" width="130px" height="80px" alt="">
+                        <p class="copyright">Copyright @2021 Pheabs. All Rights Reserved</p>
+                        <p class="address">Address: <br>Pheabs, 515 ELas Olas Boulevard, Suite 120 , Fort Lauderdale FL
+                            33301</p>
+                        <a href="http://"> Find Us on Google Maps</a>
+                    </div>
+                    <div class="col-8 col-lg-3 footer-link">
+                        <h1>Navigation</h1>
+                        <ul>
+                            <li><a href="http://">About Us</a></li>
+                            <li><a href="http://">Apply Now</a></li>
+                            <li><a href="http://">How it Works</a></li>
+                            <li><a href="http://">Contact Us</a></li>
+                            <li><a href="http://">FAQs</a></li>
+                            <li><a href="http://">Blog</a></li>
+                            <li><a href="http://">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-8 col-lg-2 footer-info">
+                        <h1>Small Print</h1>
+                        <p>Privacy Policy</p>
+                        <p>Terms and Condition</p>
+                        <p>Email: info@pheabs.com</p>
+                        <p>Phone: 1-855-884-6510</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-info">@2023 Pheabs</div>
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="http://">
+                                    <img src="/public/facebook.svg" width="20" height="20" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://">
+                                    <img src="/public/linkedin.svg" width="20" height="20" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://">
+                                    <img src="/public/youtube.svg" width="20" height="20" alt="facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootnavbar.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/range.js"></script>
+
+    <script>
+        new bootnavbar();
+    </script>
+</body>
+
+</html>

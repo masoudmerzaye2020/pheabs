@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/range.css">
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <!-- range slider -->
+    <script src="/js/rangeslider.min.js"></script>
+
+
+    <title>pheabs</title>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <nav class="navbar navbar-expand-xl navbar-fixed-top" id="main_navbar" role="navigation">
+    <div class="container-fluid ">
+      <a id="logo" class="navbar-brand logo" href="#">
+        <img src="/public/logo.svg" alt="logo" width="100" height="50">
+      </a>
+
+      <div id="social-nav" class="social-media">
+        <ul>
+          <li>
+            <img src="/public/facebook.svg" width="30" height="30" alt="facebok icon">
+          </li>
+          <li>
+            <img src="/public/linkedin.svg" width="30" height="30" alt="linkedin">
+          </li>
+          <li>
+            <img src="/public/envelope.svg" width="30" height="30" alt="envelope">
+          </li>
+        </ul>
+      </div>
+
+
+
+
+      <input type="checkbox" class="openSidebarMenu navbar-toggler" id="openSidebarMenu" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us/about-us.html" role="button" data-bs-toggle="dropdown">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/about-us/about-us.html">About Us</a></li>
+              <li><a class="dropdown-item" href="/about-us/FAQs.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="/about-us/how-it-works.html">How it works</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Our Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/our-product/bad-credit-loans.html">Bad Credit loas</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/cash-advances.html">Cash Advance</a></li>
+              <li><a class="dropdown-item" href="/our-product/emergency-cash-loans.html">Emergency Cash
+                  Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/fast-cash.html">Fast Cash</a></li>
+              <li><a class="dropdown-item" href="/our-product/guaranteed-loans.html">Guaranteed Loans</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/installment-loans.html">Installment Loans</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/no-credit-check-loans.html">No Credit Check
+                  Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/online-loans.html">Online Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/payday-advance.html">Payday Advance</a></li>
+              <li><a class="dropdown-item" href="/our-product/personal-loans-for-bad-credit.html">Personal
+                  Loans for Bad Credit</a></li>
+              <li><a class="dropdown-item" href="/our-product/same-day-loans.html">Same Day Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/short-term-loans.html">Short Term Loans</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Payday Loads
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/pay-day/alabama.html">Alabama</a></li>
+              <li><a class="dropdown-item" href="/pay-day/california.html">California</a></li>
+              <li><a class="dropdown-item" href="/pay-day/colorado.html">Colorado</a></li>
+              <li><a class="dropdown-item" href="/pay-day/florida.html">Florida</a></li>
+              <li><a class="dropdown-item" href="/pay-day/illinoise.html">Illinois</a></li>
+              <li><a class="dropdown-item" href="/pay-day/indiana.html">Indiana</a></li>
+              <li><a class="dropdown-item" href="/pay-day/iowa.html">Iowa</a></li>
+              <li><a class="dropdown-item" href="/pay-day/kentucky.html">Kentucky</a></li>
+              <li><a class="dropdown-item" href="/pay-day/las-vegas-and-nevada.html">Las Vegas and
+                  Nevada</a></li>
+              <li><a class="dropdown-item" href="/pay-day/louisiana.html">Louisiana</a></li>
+              <li><a class="dropdown-item" href="/pay-day/maryland.html">Maryland</a></li>
+              <li><a class="dropdown-item" href="/pay-day/new-mexico.html">New Mexico</a></li>
+              <li><a class="dropdown-item" href="/pay-day/ohio.html">Ohio</a></li>
+              <li><a class="dropdown-item" href="/pay-day/tennessee.html">Tennessee</a></li>
+              <li><a class="dropdown-item" href="/pay-day/texas.html">Texas</a></li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/canada.html" role="button">
+              Canada
+            </a>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Business
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/business/invoice-factoring.html">Invoice Factoring</a>
+              </li>
+              <li><a class="dropdown-item" href="/business/merchand-cash-advance.html">Merchand Cash</a>
+              </li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/guides.html" role="button">
+              Guides
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link get-started" aria-current="page" href="#">Get Started</a>
+          </li>
+        </ul>
+
+
+
+      </div>
+    </div>
+  </nav>
+
+  <section id="fast-cash-hero" class="hero bg-4">
+    <div class="hero-container mx-auto">
+      <div class="col-8 mx-auto">
+        <h1 class="hero-title center">Fast Cash Loans - Pheabs Can Help Today!</h1>
+      </div>
+
+      <div class="range-wrapper row col-11 mx-auto my-x ">
+        <div class="col-12 col-md-6 ">
+          <h4 class="white">How Much Do You Need?</h4>
+          <div class="my-lg">
+            <div>
+              <input type="range" min="100" max="5000" step="1" value="3000" unit="$" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <h4 class="white ">How Much Do You Need?</h4>
+          <div class="my-lg">
+            <div>
+              <input type="range" min="12" max="60" step="1" value="30" unit="$" />
+            </div>
+          </div>
+        </div>
+
+        <div class=" my-lg">
+          <a class="link-wrap" href="">
+            <h3 class="button-radius">Get Started >></h3>
+          </a>
+        </div>
+
+      </div>
+      <div class="col-9 mx-auto py-lg">
+        <p class="hero-paragraph center">If you have an emergency and need cash fast, Pheabs is here to help right now!
+          You can borrow $300, $500 or $1,000 and receive money into your bank account today. Simply click on ‘get
+          started’ below and enter your details in just a few minutes. You can get an instant approval on and if
+          successful, you can get funds immediately, within 1 hour or 24 hours! We also have a number of options for bad
+          credit too.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light-gray">
+    <div class="container py-lg">
+      <div class="main-col">
+        <div>
+          <h1 class="title green center bold">How To Apply For Fast Cash - Get Funds in 24 Hours</h1>
+        </div>
+        <div>
+          <p class="font-bold center"> <span class="orange">Step 1:</span> <b>Enter your details online for a free
+              quote</b></p>
+          <p class="center"><span class="orange">Step 2:</span> <b>Get matched with the best lender for you and undergo
+              further checks</b></p>
+          <p class="center"> <span class="orange">Step 3:</span> <b>Success! You have been approved and can get cash
+              immediately</b></p>
+          <p class="center">Pheabs offers a fully online process to apply for fast cash today – simply enter your
+            details using our form including your name, DOB, address, employment details, how much you wish to borrow
+            and how long for.</p>
+          <p class="center">You will receive an instant approval on the screen with the best US lender for you. Subject
+            to further checks, your loan can be fully approved and funded right away!
+
+          </p>
+          <p class="center">
+            There are no fees for applying, no impact to your credit score and if successful, you can receive money to
+            your bank account in 24 hours or the next business day.</p>
+
+
+        </div>
+        <div class="button-wrap mx-auto">
+          <a class="link-wrap" href="">
+            <div class="button-started">Get Started
+              <div class="button-icon">
+                <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="153" height="11" rx="5.5" fill="white" />
+                </svg>
+
+                <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                    fill="white" />
+                </svg>
+
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <img src="/public/white-bottom-divider.svg" width="100%" height="100%" alt="">
+  </section>
+  <section>
+    <div class="container py-lg">
+      <div class="main-col">
+        <div>
+          <h1 class="title green center">Representative Example</h1>
+          <p class="center"><b>Based on: </b>$500 loan at 292% APR (may vary based on good credit or bad credit).</p>
+          <p class="center"><b>Total repayment amount (fees and interest):</b> 2 weeks ($546.25), 1 month ($592.27), 6
+            weeks $638.05), 2 months ($683.59), 3 months ($773.95), 4 months ($863.39)</p>
+          <h1 class="title green center">How Can I Get Fast Cash with Pheabs?</h1>
+          <p class="center">When looking for fast cash online, Pheabs is a legit, trusted and regulated broker who can
+            connect you to the lender who is most likely to accept your requirements, even if you have bad credit. We
+            offer a number of fast options including payday loans, emergency loans and title car loans – helping you get
+            the quick funds that you need. </p>
+          <p class="center">To help move your application along as fast as possible, you should try to:</p>
+          <ul>
+            <li class="center"><b>Give fully accurate information,</b> including your address, income and bank details.
+              Anything that is slightly off, could be questioned by the team and require you to provide proof or
+              documentation</li>
+            <li class="center"><b>Make sure the application is for yourself</b>, not for someone else. The team may pick
+              this up and therefore ask to speak to the original borrower</li>
+            <li class="center"><b>Apply during work hours of Monday to Friday 9AM to 5PM</b> – whilst we fund on
+              weekends, any manual checks will happen during the work day and this will speed up the process for you
+            </li>
+            <li class="center"><b>Borrow a realistic amount</b> – just because you want to borrow $1,000 or $5,000, this
+              may need to be adjusted with your income and ability to make repayments. Always consider how much you
+              realistically need and can afford.</li>
+            <li class="center"><b>Be available</b> – be sure to stay by the phone or your email address for any follow
+              up calls or responses from the lender and this will help move things along quicker.</li>
+          </ul>
+          <p class="center">Other than getting a fast cash loan, there are some other excellent options which include
+            speaking to family and friends or selling old items that you no longer need. This may be better if you have
+            bad credit and plus, this will often be interest-free and a simple way to get money if you need it. But if
+            you are looking for something online and are in a hurry, Pheabs is happy to be your lending partner when you
+            need us.</p>
+
+        </div>
+        <div class="col-11 col-md-8 col-lg-6 mx-auto youtubelink py-xl">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0JfOX7c4EMw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        </div>
+        <div class="d-flex flex-wrap">
+          <div class="col-12 col-lg-4">
+            <h1 class="title green pr-lg">Am I Eligible For a Fast Cash Loan From Pheabs?</h1>
+            <div class="underline"></div>
+          </div>
+          <div class="col-12 col-lg-8 pt-md">
+            <p>The criteria for a fast cash loan from Pheabs include:</p>
+            <ul>
+              <li>U.S. resident</li>
+              <li>Over the age of 18</li>
+              <li>Steady employment</li>
+              <li>Earning a minimum of $800 per month</li>
+              <li>A live checking account for your loan to be deposited into</li>
+            </ul>
+            <p>Our partners are willing to offer fast cash loans for people with bad credit, or those looking for no
+              credit checks.</p>
+            <p>Credit checking is always a key part of processing a loan enquiry, but our partners are happy to take a
+              view and they can still give you a loan decision if you meet other criteria such as being employed and
+              having a stable income. Our technology is automated and will carry out a number of income and
+              affordability checks to ensure that you borrow the right amount, without falling into financial trouble.
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap">
+          <div class="col-12 col-lg-4">
+            <h1 class="title green">Where Can I Get Fast Cash ASAP?</h1>
+            <div class="underline"></div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <p>If you are looking for fast cash now, Pheabs can help you with our completely online loan application.
+              You can enter your details and loan requirements and we will match you with the best lender across America
+              based on your loan terms, credit score, income, affordability and more. Whether you are based in Florida
+              on the East Coast or California on the West Coast, we can tailor our product to suit your needs.</p>
+            <p>There are a number of ways to get a fast cash loan, such as going to a payday store, pawnbroker, credit
+              union, bank or you can also sell any old items that you no longer need. </p>
+            <p>Speaking to close family and friends is usually the best option since they may be able to offer you a
+              loan which is interest free and with no repayment terms, to help you get back on your feet. You can also
+              speak to a credit union or debt professional, so that you can build up your credit score and improve your
+              financial position. However, if you would like a fast loan which is effective and you are certain that you
+              can pay it back in a few week’s time, Pheabs is delighted to be here to help you right away.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8 mx-auto">
+          <img src="/public/need-fast-cash.png" width="100%" height="100%" alt="">
+        </div>
+        <div>
+          <h1 class="center orange title">Can I Get Fast Cash with Bad Credit and No Credit Checks?</h1>
+          <p class="center">Yes, there are opportunities to get fast cash with bad credit scores, but the amount you can
+            borrow and the rate charged may be slightly adjusted. There is a myth that you cannot get a loan with a very
+            bad or poor credit score, however, assuming that you have stable income and employment and are committed to
+            repaying your loan on time at the end of the week or the month, there are a number of lenders who are happy
+            to work with you.</p>
+          <p>Plus, by working with Pheabs, we have a number of bad credit lenders on our panel, so they are prepared to
+            see credit scores of 500, 550 and 600 and will be able to present a number of competitive options.</p>
+          <p>For this reason, you may be searching for fast cash with no credit checks. Whilst credit checks are a key
+            part of any loan application, we may be able to offer alternatives such as cash advances, credit union
+            products, title loans or secured loans to help you get the funds you need.</p>
+
+        </div>
+        <div>
+          <h1 class="center title orange pt-lg">What Are Terms For Fast Cash From Pheabs?</h1>
+          <div class="col-12 col-lg-8 mx-auto py-lg">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                <tr>
+                  <td class="table-title">Minimum Loan Amount</td>
+                  <td class="table-desc">$100</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Maximum Loan Amount</td>
+                  <td class="table-desc"> $35,000</td>
+                </tr>
+
+                <tr>
+                  <td class="table-title">Speed of Transaction</td>
+                  <td class="table-desc">1 to 24 hours</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Cooling Period</td>
+                  <td class="table-desc">14 days</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Representative APR</td>
+                  <td class="table-desc"> 292%</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Credit Checks</td>
+                  <td class="table-desc">Yes</td>
+                </tr>
+                <tr>
+                  <td class="table-title">Bad Credit</td>
+                  <td class="table-desc">Considered</td>
+                </tr>
+
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap">
+          <div class="col-12 col-lg-8">
+            <h1 class="orange title">
+              How Do Repayments Work?</h1>
+            <p>Your repayments will be collected from your bank account on a scheduled pay date that you select – with
+              most customers choosing a date at the end of each month.</p>
+            <p>If your loan only lasts for one month (see payday loans online), then you will likely pay the entire loan
+              and interest in full on your next payday from work.</p>
+            <p>If your loan lasts for 3,6,12 months or longer, you will typically pay back in equal monthly instalments
+              (see installment loans).</p>
+            <p>The lender will automatically collect repayments from your account and send you a reminder by email and
+              SMS on the days leading up to collection, so you are fully aware and there are no surprises.</p>
+            <h1 class="title orange">Why Would I Need Fast Cash?</h1>
+            <p>People often need fast cash when there is a household emergency or they need a little extra money to see
+              them through the month. </p>
+            <p>Common household problems include money for car repairs, broken broilers, plumbing disasters and maybe
+              just to clear the bills piling up on the kitchen table.</p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h1 class="orange title pl-lg">Useful Guides</h1>
+            <ul class="useful-guides">
+              <li>
+                <a href="">How to get cash fast</a>
+              </li>
+              <li>
+                <a href="">Five steps to same day cash</a>
+              </li>
+              <li>
+                <a href="">Should you borrow from family and friends?</a>
+              </li>
+              <li>
+                <a href="">Five things to avoid to save cash</a>
+              </li>
+              <li>
+                <a href="">How to make extra cash during the pandemic</a>
+              </li>
+
+            </ul>
+            <div class="button-wrap mx-auto">
+              <a class="link-wrap" href="">
+                <div class="button-started">Get Started
+                  <div class="button-icon">
+                    <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect width="153" height="11" rx="5.5" fill="white" />
+                    </svg>
+
+                    <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                        fill="white" />
+                    </svg>
+
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light-gray">
+    <div class="container py-lg">
+      <div class="main-col">
+        <div>
+          <h1 class="title orange">How Can I Get Fast Cash Online with Pheabs?</h1>
+          <p>Start by clicking on ‘get started’ below and enter your details in our 5-Step Process. </p>
+          <p>Our loan enquiry form is completed online, 24 hours a day and 7 days a week. You can submit the loan
+            request at home, on the go or at work, using a desktop, mobile or tablet.</p>
+          <p>Our streamlined process means that you can get an instant decision on the screen and subject to further
+            checks, you can receive money into your checking account ASAP, in 24 hours or the next business day. Simple.
+          </p>
+        </div>
+        <div class="button-wrap py-lg">
+          <a class="link-wrap" href="">
+            <div class="button-started">Get Started
+              <div class="button-icon">
+                <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="153" height="11" rx="5.5" fill="white" />
+                </svg>
+
+                <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                    fill="white" />
+                </svg>
+
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="container py-lg">
+      <div class="main-col">
+        <h1 class="title orange">Frequently Asked Questions</h1>
+        <div class="row ">
+
+          <div class="nav nav-links d-flex  flex-wrap col-lg-4 faq-question" id="myTab">
+
+            <a href="#first" class="nav-link  flex-fill  active" data-bs-toggle="tab">
+              Is Pheabs a Direct Lender?
+            </a>
+            <a href="#second" class="nav-link flex-fill mx-6" data-bs-toggle="tab">
+              Is Pheabs Legit?
+            </a>
+            <a href="#third" class="nav-link flex-fill " data-bs-toggle="tab">
+              Will I Be Charged For Applying?
+            </a>
+            <a href="#fourth" class="nav-link flex-fill" data-bs-toggle="tab">
+              What Happens if I Do Not Repay?
+            </a>
+            <a href="#fifth" class="nav-link flex-fill" data-bs-toggle="tab">
+              Can I Apply if I am Unemployed?
+            </a>
+            <a href="#sixth" class="nav-link flex-fill" data-bs-toggle="tab">
+              How Much Will My Loan Cost Me?
+            </a>
+            <a href="#seventh" class="nav-link flex-fill" data-bs-toggle="tab">
+              What Happens if My Loan is Declined?
+            </a>
+          </div>
+
+          <div class="tab-content col-lg-8 faq-answer">
+            <div class="tab-pane active" id="first">
+
+              <p>No, Pheabs is not a direct lender, we act as an introducer to connect customers to other lenders who
+                are looking to fund loans. </p>
+              <p>We are able to accommodate customers with different credit histories and backgrounds, with access to a
+                pool of different lenders, each with separate criteria.</p>
+              <p>We do not charge fees for using our service, instead taking an introductory commission from the lenders
+                we work with, if a loan submission is acceptable.</p>
+            </div>
+            <div class="tab-pane fade" id="second">
+
+              <p> Yes, Pheabs is legit, we are a licensed broker in America and have helped over 1 million people to
+                date to find affordable and quick finance for them. We are passionate about helping people to find the
+                right product, with no upfront fees and no impact to their credit score.</p>
+            </div>
+            <div class="tab-pane fade" id="third">
+
+              <p> No, it is completely free to submit a loan form with Pheabs and we will not charge anything for
+                enquiring and will not take any money from your account.</p>
+            </div>
+            <div class="tab-pane fade" id="fourth">
+
+              <p>If you do not repay or miss a repayment, you may be charged a late fee and it may negatively impact
+                your credit score.</p>
+              <p>It is important that you speak to your lender if you are having trouble repaying or realise that you
+                will not be able to make a payment this month.</p>
+              <p>Most lenders are obligated to give you some form of help such as a payment plan or to freeze interest.
+              </p>
+              <p>If you are silent and do not respond, you may incur late fees and additional charges.</p>
+            </div>
+            <div class="tab-pane fade" id="fifth">
+
+              <p> We offer loans to people who are employed either part-time or full-time, you may be able to apply if
+                you are employed, but earning a regular income through a pension or welfare. However, you should ideally
+                be employed with a regular wage. </p>
+            </div>
+            <div class="tab-pane fade" id="sixth">
+
+              <p>The typical APR for a fast cash loan ranges from 391% to 521%. Based on a $500 loan of 292% APR, it
+                will cost: 2 weeks ($546.25), 1 month ($592.27), 6 weeks $638.05), 2 months ($683.59), 3 months
+                ($773.95), 4 months ($863.39)
+              </p>
+            </div>
+            <div class="tab-pane fade" id="seventh">
+
+              <p>If your application is not successful, nothing will happen! There will be no damage to your credit
+                score and no fees charged on your bank account. In fact, we always have some offer for our customers and
+                if it is not a loan, it might be a recommendation to join a credit union or to work with a debt
+                professional to help you get back on your feet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="footer">
+    <div class="container">
+      <div class="main-col">
+        <div class="row row-cols-md-2 row-cols-lg-3">
+          <div class="col-8 col-lg-7 footer">
+            <img src="/public/logo.svg" width="130px" height="80px" alt="">
+            <p class="copyright">Copyright @2021 Pheabs. All Rights Reserved</p>
+            <p class="address">Address: <br>Pheabs, 515 ELas Olas Boulevard, Suite 120 , Fort Lauderdale FL 33301</p>
+            <a href="http://"> Find Us on Google Maps</a>
+          </div>
+          <div class="col-8 col-lg-3 footer-link">
+            <h1>Navigation</h1>
+            <ul>
+              <li><a href="http://">About Us</a></li>
+              <li><a href="http://">Apply Now</a></li>
+              <li><a href="http://">How it Works</a></li>
+              <li><a href="http://">Contact Us</a></li>
+              <li><a href="http://">FAQs</a></li>
+              <li><a href="http://">Blog</a></li>
+              <li><a href="http://">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="col-8 col-lg-2 footer-info">
+            <h1>Small Print</h1>
+            <p>Privacy Policy</p>
+            <p>Terms and Condition</p>
+            <p>Email: info@pheabs.com</p>
+            <p>Phone: 1-855-884-6510</p>
+          </div>
+        </div>
+        <div>
+          <div class="footer-info">@2023 Pheabs</div>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="http://">
+                  <img src="/public/facebook.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+              <li>
+                <a href="http://">
+                  <img src="/public/linkedin.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+              <li>
+                <a href="http://">
+                  <img src="/public/youtube.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="block" onclick="topFunction()" id="arrow-up" title="Go to top">
+      <img src="/public/up-arrow.svg" width="20" height="20" alt="arrow-up">
+
+    </button>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/bootnavbar.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/range.js"></script>
+  <script src="/js/gototop.js"></script>
+
+  <script>
+    new bootnavbar();
+  </script>
+</body>
+
+</html>

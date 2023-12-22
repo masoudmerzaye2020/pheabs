@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/range.css">
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <!-- range slider -->
+    <script src="/js/rangeslider.min.js"></script>
+
+
+    <title>pheabs</title>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <nav class="navbar navbar-expand-xl navbar-fixed-top" id="main_navbar" role="navigation">
+    <div class="container-fluid ">
+      <a id="logo" class="navbar-brand logo" href="#">
+        <img src="/public/logo.svg" alt="logo" width="100" height="50">
+      </a>
+
+      <div id="social-nav" class="social-media">
+        <ul>
+          <li>
+            <img src="/public/facebook.svg" width="30" height="30" alt="facebok icon">
+          </li>
+          <li>
+            <img src="/public/linkedin.svg" width="30" height="30" alt="linkedin">
+          </li>
+          <li>
+            <img src="/public/envelope.svg" width="30" height="30" alt="envelope">
+          </li>
+        </ul>
+      </div>
+
+
+
+
+      <input type="checkbox" class="openSidebarMenu navbar-toggler" id="openSidebarMenu" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us/about-us.html" role="button" data-bs-toggle="dropdown">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/about-us/about-us.html">About Us</a></li>
+              <li><a class="dropdown-item" href="/about-us/FAQs.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="/about-us/how-it-works.html">How it works</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Our Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/our-product/bad-credit-loans.html">Bad Credit loas</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/cash-advances.html">Cash Advance</a></li>
+              <li><a class="dropdown-item" href="/our-product/emergency-cash-loans.html">Emergency Cash
+                  Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/fast-cash.html">Fast Cash</a></li>
+              <li><a class="dropdown-item" href="/our-product/guaranteed-loans.html">Guaranteed Loans</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/installment-loans.html">Installment Loans</a>
+              </li>
+              <li><a class="dropdown-item" href="/our-product/no-credit-check-loans.html">No Credit Check
+                  Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/online-loans.html">Online Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/payday-advance.html">Payday Advance</a></li>
+              <li><a class="dropdown-item" href="/our-product/personal-loans-for-bad-credit.html">Personal
+                  Loans for Bad Credit</a></li>
+              <li><a class="dropdown-item" href="/our-product/same-day-loans.html">Same Day Loans</a></li>
+              <li><a class="dropdown-item" href="/our-product/short-term-loans.html">Short Term Loans</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Payday Loads
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/pay-day/alabama.html">Alabama</a></li>
+              <li><a class="dropdown-item" href="/pay-day/california.html">California</a></li>
+              <li><a class="dropdown-item" href="/pay-day/colorado.html">Colorado</a></li>
+              <li><a class="dropdown-item" href="/pay-day/florida.html">Florida</a></li>
+              <li><a class="dropdown-item" href="/pay-day/illinoise.html">Illinois</a></li>
+              <li><a class="dropdown-item" href="/pay-day/indiana.html">Indiana</a></li>
+              <li><a class="dropdown-item" href="/pay-day/iowa.html">Iowa</a></li>
+              <li><a class="dropdown-item" href="/pay-day/kentucky.html">Kentucky</a></li>
+              <li><a class="dropdown-item" href="/pay-day/las-vegas-and-nevada.html">Las Vegas and
+                  Nevada</a></li>
+              <li><a class="dropdown-item" href="/pay-day/louisiana.html">Louisiana</a></li>
+              <li><a class="dropdown-item" href="/pay-day/maryland.html">Maryland</a></li>
+              <li><a class="dropdown-item" href="/pay-day/new-mexico.html">New Mexico</a></li>
+              <li><a class="dropdown-item" href="/pay-day/ohio.html">Ohio</a></li>
+              <li><a class="dropdown-item" href="/pay-day/tennessee.html">Tennessee</a></li>
+              <li><a class="dropdown-item" href="/pay-day/texas.html">Texas</a></li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/canada.html" role="button">
+              Canada
+            </a>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Business
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/business/invoice-factoring.html">Invoice Factoring</a>
+              </li>
+              <li><a class="dropdown-item" href="/business/merchand-cash-advance.html">Merchand Cash</a>
+              </li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/guides.html" role="button">
+              Guides
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link get-started" aria-current="page" href="#">Get Started</a>
+          </li>
+        </ul>
+
+
+
+      </div>
+    </div>
+  </nav>
+
+  <section id="payday-loans-hero" class="hero bg-3">
+    <div class="hero-container mx-auto">
+      <div class="col-10 mx-auto">
+        <h1 class="hero-title center">Payday Loans Near
+          Maryland and Baltimore</h1>
+      </div>
+
+
+      <div class="col-11 mx-auto center">
+        <p class="hero-paragraph">You can find a payday loan anywhere in Maryland with Pheabs. From Baltimore to
+          Columbia, you can get started with Pheabs to request $100 to $35,000 and get money on the same day or next
+          business day of applying!</p>
+      </div>
+
+      <div class="range-wrapper row col-11 mx-auto py-lg ">
+        <div class="col-12 col-md-6 ">
+          <h4 class="white">How Much Do You Need?</h4>
+          <div class="my-lg">
+            <div>
+              <input type="range" min="100" max="5000" step="1" value="3000" unit="$" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <h4 class="white ">How Much Do You Need?</h4>
+          <div class="my-lg">
+            <div>
+              <input type="range" min="12" max="60" step="1" value="30" unit="$" />
+            </div>
+          </div>
+        </div>
+
+        <div class="my-lg">
+          <a class="link-wrap" href="">
+            <h3 class="button-radius">Get Started >></h3>
+          </a>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+  <section class="bg-light-gray">
+    <div class="container py-lg">
+      <div class="main-col">
+        <div class="center">
+          <h1 class="orange title py-lg">
+            Why Use Pheabs as Your Payday Lender in Maryland?</h1>
+          <p>
+            If you come across an unexpected cost between wages, a payday loan could be the best option to get the cash
+            you need as quickly as possible. With a short term loan, you can borrow from $100 – $35,000 to cover an
+            emergency bill until you can repay it at your next payday. Using Pheabs to find your payday loan in Maryland
+            will get you results as quickly as possible. It will also send your request to lenders across Maryland,
+            giving you the best chances of finding the loan you need, as fast as possible. You could see the money in
+            your account within just one hour! Get started today to get on top of your finances.</p>
+        </div>
+
+        <div class=" d-flex flex-wrap">
+          <div class="col-lg-4 col-12 p-sm">
+            <div class="box">
+              <img src="/public/pig.svg" width="50%" height="50%" alt="">
+              <h1 class="title orange center">Responsible</h1>
+              <p class="center">We’re a broker not a lender, but we’ll still make sure that the loan is affordable. Even
+                if you don’t have a perfect credit history, we’ll try to help.</p>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 p-sm">
+            <div class="box">
+              <img src="/public/bulb.svg" width="50%" height="50%" alt="">
+              <h1 class="title orange center">The Right Fit</h1>
+              <p class="center">We only work with reputable lenders, so we know they are lending responsibly. We’ll
+                search our panel of lenders to find the right loan for you.</p>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 p-sm">
+            <div class="box ">
+              <img src="/public/dashboard.svg" width="50%" height="50%" alt="">
+              <h1 class="title orange center">Soft search will not impact your credit score</h1>
+              <p class="center">We offer soft search loans that will check of the basis of your credit record but not
+                leave any visible footprint.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="/public/white-bottom-divider.svg" width="100%" height="100%" alt="">
+  </section>
+
+  <section>
+    <div class="container py-lg">
+      <div class="main-col">
+        <div class="center">
+          <h1 class="green title">How Do I Get A Payday Loan In Maryland?</h1>
+          <div class="underline my-lg mx-auto"></div>
+          <p>If you request a loan through Pheabs, you can find a speedy payday loan in Maryland. Pheabs does the hard
+            work for you and works with direct lending companies across Maryland to find you a loan. We offer a fully
+            online experience with almost instant decisions to make the process as straightforward as possible. There’s
+            no need to leave the house or approach multiple lenders simply enquire online today and let Pheabs do the
+            rest.</p>
+
+          <div class="button-wrap mx-auto py-md">
+            <a class="link-wrap" href="">
+              <div class="button-started">Get Started
+                <div class="button-icon">
+                  <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="153" height="11" rx="5.5" fill="white" />
+                  </svg>
+
+                  <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                      fill="white" />
+                  </svg>
+
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-11 col-md-8 col-lg-6 mx-auto youtubelink">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0JfOX7c4EMw"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+
+          </div>
+          <div class="button-wrap mx-auto py-md">
+            <a class="link-wrap" href="">
+              <div class="button-started">Get Started
+                <div class="button-icon">
+                  <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="153" height="11" rx="5.5" fill="white" />
+                  </svg>
+
+                  <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                      fill="white" />
+                  </svg>
+
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light-gray">
+    <div class="container py-lg">
+      <div class="main-col">
+        <div class="d-flex flex-wrap">
+          <div class="col-12 col-lg-8">
+            <h1 class="orange title py-md">How Long Does It Take To Get A Payday Loan In Maryland?
+            </h1>
+            <p>The online form is quick and can be done from the comfort of your own home. When requesting a payday loan
+              in Maryland with Pheabs, you can get same-day funding for your financial emergency. Don’t waste time
+              visiting your local loan lender and filling out paperwork or searching around for the best loan options.
+              Get started with Pheabs online today with zero paperwork, and access payday loan options from direct
+              lending companies around Maryland. If you are accepted, a lender will be in touch to get the money in your
+              account as soon as possible. You could receive funds within one hour!</p>
+            <h1 class="orange title py-md">What Can I Do To Get Funds Faster?</h1>
+            <p>Getting a payday loan in Maryland with Pheabs is already efficient, but there are some tips to ensure the
+              speediest process possible. The first thing you should do before requesting is check that you are eligible
+              for a payday loan.</p>
+            <p>To avoid disappointment, make sure you meet the four main criteria for getting a payday loan in Maryland:
+            </p>
+            <ul>
+              <li>You must be over 18.</li>
+              <li>You are required to be a US resident.</li>
+              <li>You need to have a steady job, making at least $800 per month.</li>
+              <li>You need a checking account for the money to be paid into.</li>
+            </ul>
+            <p>When filling out the online loan request, be sure to have your bank details on hand. The best time to
+              send your enquiry is during work hours as this is when most loans are funded. It also advised to avoid
+              national holidays. Once you’ve sent your request, make sure to remain available in case you are connected
+              to provide follow-up information. If accepted, the loan could arrive in your account in as little as one
+              hour.</p>
+          </div>
+          <div class=" col-12 col-lg-4 py-lg">
+            <div class="box" style="border-radius: 0px; box-shadow: 10px;">
+              <img src="/public/maryland-payday-loans.png" width="100%" height="auto" alt="">
+
+
+
+              <div class="button-wrap mx-auto">
+                <a class="link-wrap" href="">
+                  <div class="button-started">Get Started
+                    <div class="button-icon">
+                      <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="153" height="11" rx="5.5" fill="white" />
+                      </svg>
+
+                      <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                          fill="white" />
+                      </svg>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container py-lg">
+      <div class="main-col">
+        <div class="center">
+          <h1 class="orange title py-md">Does A Payday Loan Have To Be Repaid In Full On My Next Payday?</h1>
+          <p>You are not required to fully repay your payday loan on your next payday. Payday loans can be paid back
+            when you get your next pay cheque, but many people in Maryland pay them back over several months, or even
+            years.</p>
+          <p>This longer-term option is to help avoid being in a similar situation the following month when the loan is
+            due to be repaid. Splitting the repayment into a few smaller chunks makes it more manageable, leaving more
+            of your wages for you to live off. You can pay back your Maryland payday loan in equal monthly installments
+            for up to five years. For more information, visit installment loans.</p>
+
+
+          <div class="button-wrap mx-auto">
+            <a class="link-wrap" href="">
+              <div class="button-started">Get Started
+                <div class="button-icon">
+                  <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="153" height="11" rx="5.5" fill="white" />
+                  </svg>
+
+                  <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                      fill="white" />
+                  </svg>
+
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light-gray">
+    <div class="conainer">
+      <div class="main-col">
+        <div class="d-flex flex-wrap">
+          <div class="col-12 col-lg-4 pt-xl tablet-hide">
+
+            <img src="/public/baltimore-payday-loans.png" width="95%" height="100%" alt="">
+
+          </div>
+          <div class="col-12 col-lg-8 py-md">
+            <h1 class="title orange pt-md">Can I Get A Payday Loan In Maryland If I Have Bad Credit?</h1>
+            <p>Yes, you can still get a payday loan in Maryland with a poor credit score. Pheabs is willing to accept
+              all credit scores, and requesting will not affect your credit. Whether you have bad credit or none at all,
+              it is still worth enquiring with Pheabs. Don’t worry if you’ve already been denied by banks because of bad
+              credit – filling out the online form will give you the best chance of finding a payday loan that works for
+              you. A Maryland payday loan could be the best step in getting your finances in check and finally improving
+              your credit rating.</p>
+          </div>
+        </div>
+        <div>
+          <h1 class="orange title pt-lg">What is the Eligibility Criteria for a Payday Loan in Baltimore or Maryland?
+          </h1>
+          <p>To be eligible for a loan with Pheabs, you will need to be over 18 years of age, a US citizen, in
+            employment and earning a minimum of $800 per month. All customers must be earning a regular income and this
+            will determine whether you can afford your loan, how much you can borrow and repay.</p>
+          <p>You will need to provide your SSN upon submitting your loan request and have a live checking account where
+            the money can be sent to you if you are approved.</p>
+          <p>Pheabs will take a view on all credit histories, including bad credit and those looking for loans with no
+            credit checks. We just require a minimum income and confirmation that you are currently in employment.</p>
+          <h1 class="orange title pt-lg">Can I Get a Quick Same Day Loan in Maryland?</h1>
+          <p>There are fast options if you are willing to go to a payday loan store in Maryland – or equally you can
+            submit an online loan request with Pheabs</p>
+          <p>If you are looking for a same day loan in Maryland, this is possible but not always guaranteed since we
+            have to run some checks and the processing of funds can only be available on the next business day.</p>
+          <p>But do not fear, with an online and automated process, we can aim to have funds into your account as soon
+            as possible.</p>
+          <h1 class="orange title pt-lg">How is Pheabs Different?</h1>
+          <p>Pheabs was set up in 2018 with a passion for helping Americans find the best payday loans and financial
+            products for them. We understand that sometimes you need a few extra bucks to see you through the month, but
+            finding a responsible and affordable loan is not always that straightforward.</p>
+          <p>We are proud to offer a fully online solution, with no upfront fees or impact to your credit record and we
+            can instantly connect you with the payday lender who is most likely to accept your loan, at the best rates
+            possible.</p>
+          <h1 class="orange title pt-lg">How To Apply For Payday Loans in Maryland and Baltimore with Pheabs</h1>
+          <p>Once you click on get started now, the form provided by Pheabs asks a few simple questions including the
+            loan amount you wish to borrow and how long for. You can find bad credit, short-term loans from $100 to
+            $35,000, to be repaid over up to five years. We will ask for a few personal details, your employment
+            information and your income as well as expenditure details. We understand that you’ll often need quick loan
+            in an emergency, so we’ll try to get back to you as soon as possible.</p>
+          <p>As a broker and not a lender, we won’t pay the funds directly into your bank, but pass on your details to
+            the lender we connect you with. We’ll search our panel of lenders to find the right fit for you, with the
+            best interest rates. If approved, you could have the funds in your account in as little as an hour. So if
+            you’re looking for a same day loan for people with bad credit, we may be able to help.</p>
+        </div>
+
+
+        <div class="button-wrap mx-auto py-lg">
+          <a class="link-wrap" href="">
+            <div class="button-started">Get Started
+              <div class="button-icon">
+                <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="153" height="11" rx="5.5" fill="white" />
+                </svg>
+
+                <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                    fill="white" />
+                </svg>
+
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container py-lg">
+      <div class="main-col">
+        <div class="center">
+          <h1 class="title black">Where To Find Us</h1>
+          <p>Pheabs offers payday loans across Maryland and Baltimore including large cities such as Columbia,
+            Germantown, Waldorf and Silver Spring.</p>
+          <div class="map-frame">
+            <iframe loading="lazy" style="border: 0px; opacity: 1; visibility: visible;" tabindex="0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3184785.786206133!2d-79.48027847408439!3d38.7833704767971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64debe9f190df%3A0xf2af37657655f6b1!2sMaryland%2C%20USA!5e0!3m2!1sen!2suk!4v1608554123727!5m2!1sen!2suk"
+              width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen" aria-hidden="false"><span
+                data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;"
+                class="mce_SELRES_start">&#xFEFF;</span></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="footer">
+    <div class="container">
+      <div class="main-col">
+        <div class="row row-cols-md-2 row-cols-lg-3">
+          <div class="col-8 col-lg-7 footer">
+            <img src="/public/logo.svg" width="130px" height="80px" alt="">
+            <p class="copyright">Copyright @2021 Pheabs. All Rights Reserved</p>
+            <p class="address">Address: <br>Pheabs, 515 ELas Olas Boulevard, Suite 120 , Fort Lauderdale FL 33301</p>
+            <a href="http://"> Find Us on Google Maps</a>
+          </div>
+          <div class="col-8 col-lg-3 footer-link">
+            <h1>Navigation</h1>
+            <ul>
+              <li><a href="http://">About Us</a></li>
+              <li><a href="http://">Apply Now</a></li>
+              <li><a href="http://">How it Works</a></li>
+              <li><a href="http://">Contact Us</a></li>
+              <li><a href="http://">FAQs</a></li>
+              <li><a href="http://">Blog</a></li>
+              <li><a href="http://">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="col-8 col-lg-2 footer-info">
+            <h1>Small Print</h1>
+            <p>Privacy Policy</p>
+            <p>Terms and Condition</p>
+            <p>Email: info@pheabs.com</p>
+            <p>Phone: 1-855-884-6510</p>
+          </div>
+        </div>
+        <div>
+          <div class="footer-info">@2023 Pheabs</div>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="http://">
+                  <img src="/public/facebook.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+              <li>
+                <a href="http://">
+                  <img src="/public/linkedin.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+              <li>
+                <a href="http://">
+                  <img src="/public/youtube.svg" width="20" height="20" alt="facebook">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="block" onclick="topFunction()" id="arrow-up" title="Go to top">
+      <img src="/public/up-arrow.svg" width="20" height="20" alt="arrow-up">
+
+    </button>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/bootnavbar.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/range.js"></script>
+  <script src="/js/gototop.js"></script>
+
+  <script>
+    new bootnavbar();
+  </script>
+</body>
+
+</html>

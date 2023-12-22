@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/range.css">
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <!-- range slider -->
+    <script src="/js/rangeslider.min.js"></script>
+
+
+    <title>pheabs</title>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-fixed-top" id="main_navbar" role="navigation">
+        <div class="container-fluid ">
+            <a id="logo" class="navbar-brand logo" href="#">
+                <img src="/public/logo.svg" alt="logo" width="100" height="50">
+            </a>
+
+            <div id="social-nav" class="social-media">
+                <ul>
+                    <li>
+                        <img src="/public/facebook.svg" width="30" height="30" alt="facebok icon">
+                    </li>
+                    <li>
+                        <img src="/public/linkedin.svg" width="30" height="30" alt="linkedin">
+                    </li>
+                    <li>
+                        <img src="/public/envelope.svg" width="30" height="30" alt="envelope">
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <input type="checkbox" class="openSidebarMenu navbar-toggler" id="openSidebarMenu" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/about-us/about-us.html" role="button"
+                            data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about-us/about-us.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="/about-us/FAQs.html">FAQ</a></li>
+                            <li><a class="dropdown-item" href="/about-us/how-it-works.html">How it works</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Our Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/our-product/bad-credit-loans.html">Bad Credit loas</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/our-product/cash-advances.html">Cash Advance</a></li>
+                            <li><a class="dropdown-item" href="/our-product/emergency-cash-loans.html">Emergency Cash
+                                    Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/fast-cash.html">Fast Cash</a></li>
+                            <li><a class="dropdown-item" href="/our-product/guaranteed-loans.html">Guaranteed Loans</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/our-product/installment-loans.html">Installment
+                                    Loans</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/our-product/no-credit-check-loans.html">No Credit Check
+                                    Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/online-loans.html">Online Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/payday-advance.html">Payday Advance</a></li>
+                            <li><a class="dropdown-item" href="/our-product/personal-loans-for-bad-credit.html">Personal
+                                    Loans for Bad Credit</a></li>
+                            <li><a class="dropdown-item" href="/our-product/same-day-loans.html">Same Day Loans</a></li>
+                            <li><a class="dropdown-item" href="/our-product/short-term-loans.html">Short Term Loans</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Payday Loads
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pay-day/alabama.html">Alabama</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/california.html">California</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/colorado.html">Colorado</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/florida.html">Florida</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/illinoise.html">Illinois</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/indiana.html">Indiana</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/iowa.html">Iowa</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/kentucky.html">Kentucky</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/las-vegas-and-nevada.html">Las Vegas and
+                                    Nevada</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/louisiana.html">Louisiana</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/maryland.html">Maryland</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/new-mexico.html">New Mexico</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/ohio.html">Ohio</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/tennessee.html">Tennessee</a></li>
+                            <li><a class="dropdown-item" href="/pay-day/texas.html">Texas</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/canada.html" role="button">
+                            Canada
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Business
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/business/invoice-factoring.html">Invoice Factoring</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/business/merchand-cash-advance.html">Merchand Cash</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/guides.html" role="button">
+                            Guides
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link get-started" aria-current="page" href="#">Get Started</a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="" class="hero bg-3">
+        <div class="hero-container mx-auto">
+            <div class="col-10 mx-auto">
+                <h1 class="hero-title center">For Bad Credit Loans <br>
+                    with Guaranteed Approval, <br>
+                    Pheabs Can Help. Apply Online Today!</h1>
+
+            </div>
+
+            <div class="range-wrapper row col-11 mx-auto my-x py-lg">
+                <div class="col-12 col-md-6 ">
+                    <h4 class="white">How Much Do You Need?</h4>
+                    <div class="my-lg">
+                        <div>
+                            <input type="range" min="100" max="5000" step="1" value="3000" unit="$" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h4 class="white ">How Much Do You Need?</h4>
+                    <div class="my-lg">
+                        <div>
+                            <input type="range" min="12" max="60" step="1" value="30" unit="$" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-md-12 mx-auto my-lg">
+                    <a class="link-wrap" href="">
+                        <h3 class="button-radius">Get Started >></h3>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="py-4">
+                <p class="hero-paragraph center">
+                    You can apply for Bad Credit Loans Online with Pheabs - If you are looking for guaranteed approval,
+                    we offer $500, $1,000, $2,000 or more, repaid over 1 to 60 months and you can check your eligibility
+                    in less than 5 minutes using our free online application form.
+                </p>
+                <p class="hero-paragraph center text-small">
+                    Representative Example: <br>
+                    On an assumed loan amount of $750 over 12 months. Rate of interest 292% (fixed). Representative
+                    171%APR. Total repayment amount $1351.20 and total interest is $601.20. 12 monthly payment of
+                    $112.60.*
+                </p>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="bg-light-gray">
+        <div class="container py-xl">
+            <div class="main-col">
+                <div class="col-10 mx-auto">
+                    <h1 class="title center orange">Where Can I Find Bad Credit Loans?</h1>
+                    <p class="bold center">Pheabs can facilitate poor credit loans across the entire US and we can match
+                        your application with a lender who is near your an can offer the best terms possible, with
+                        funding available in i hour, 24 hours or the next business day.</p>
+                </div>
+
+
+
+
+                <div class="col-12 d-flex flex-wrap">
+                    <div class="col-12 col-lg-4 bad-credit-list">
+                        <ul>
+                            <li>
+                                <a href="">Albama ></a>
+                            </li>
+                            <li>
+                                <a href=""> Colorado ></a>
+                            </li>
+                            <li>
+                                <a href=""> California ></a>
+                            </li>
+                            <li>
+                                <a href="">Illinois</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4 bad-credit-list">
+                        <ul>
+                            <li>
+                                <a href=""> Indiana ></a>
+                            </li>
+                            <li>
+                                <a href="">Iowa ></a>
+                            </li>
+                            <li>
+                                <a href="">Kentucky ></a>
+                            </li>
+                            <li>
+                                <a href="">Louisiana ></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4  bad-credit-list ">
+                        <ul>
+                            <li>
+                                <a href="">Maryland ></a>
+                            </li>
+                            <li>
+                                <a href="">Ohio ></a>
+                            </li>
+                            <li>
+                                <a href="">Tennessee ></a>
+                            </li>
+                            <li>
+                                <a href="">Texas ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="/public/white-bottom-divider.svg" width="100%" height="100%" alt="divider">
+    </section>
+
+    <section>
+        <div class="container ">
+            <div class="main-col">
+                <div class="py-xl">
+                    <div class="center">
+                        <img src="/public/Five-Star-Google-Review.png" alt="">
+                        <br>
+                        <img src="/public/google-reviews.png" alt="google">
+                    </div>
+                    <div class="button-wrap mx-auto py-lg">
+                        <a class="link-wrap" href="">
+                            <div class="button-started">Get Started
+                                <div class="button-icon">
+                                    <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="153" height="11" rx="5.5" fill="white" />
+                                    </svg>
+
+                                    <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="col-12 col-lg-4">
+                            <h1 class="title green">What is a Bad Credit Loan?</h1>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <p class="dark-gray py-sm font-small">A bad credit loan can help people borrow money even if
+                                that have a bad credit score. Maybe you have missed some payments in the past, but this
+                                should not define your future. If your financial position is improving and you are
+                                passionate about paying your loan on time, you can certainly apply and get the loan you
+                                need.</p>
+                            <p class="paragraph py-sm font-small">It is not just your credit score that is considered,
+                                our
+                                lenders will take into account various things including:</p>
+                            <ul>
+                                <li>Your age</li>
+                                <li>Yout type of residence</li>
+                                <li>The amount you have asked to borrow with the lender</li>
+                                <li>Your income</li>
+                                <li>Your employment status</li>
+                                <li>Your affordability</li>
+                            </ul>
+                            <p>There are a range of different loan types that can be made accessible to those with very
+                                bad
+                                credit, including certain payday loans, installment loans and secured loans too.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light-gray">
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <h1 class="title orange">Can I Get a Bad Credit Loan with Guaranteed Approval?</h1>
+                        <p>Well, there are a number of US lenders who are willing to offer loans for people with bad
+                            credit – and this is the foundation of their business. These lenders understand that keeping
+                            a perfect credit score is very difficult, especially with rising living costs and emergency
+                            situations which can require money fast and can easily make you fall behind on payments.
+                        </p>
+                        <p>So if it is guaranteed approval loans that you are looking for, there are a number of bad
+                            credit loan companies out there and their loan products are adjusted to suit people with
+                            poor credit histories. Perhaps the loan terms are a little longer and you can pay back in
+                            multiple installments, or maybe there is just a limit to the amount you can borrow. In some
+                            cases, the rates charged might be a little higher to reflect the potential risk of default.
+                        </p>
+                        <p>But just because you have a bad credit score does not mean that you are not trying to improve
+                            or could be a good person to lend to. In fact, you may have overcome a tough situation and
+                            are now on the road to improving your credit score.</p>
+                        <p>If you have a very poor credit rating, Pheabs have a number of lenders who are willing to
+                            consider your application. You just need to have a stable income and can commit to making
+                            your repayments on time each month.</p>
+                        <h1 class="title orange">Do You Offer Emergency Loans for Bad Credit?</h1>
+                        <p>Yes, you can get approved for bad credit loans for emergencies, whether you have a broken
+                            down car, medical bill or plumbing problem at home, you can borrow $1,000, $2,000 or more to
+                            fix everything and get back on your feet. </p>
+                        <p>Although we always try hard to have money saved for a rainy day, you can never be sure when
+                            an emergency will arise. Whilst emergencies are always difficult and tricky to pay for, the
+                            last thing you want is to be declined because of bad credit – but fear not, there are a
+                            number of lenders who will gladly consider your application.</p>
+                        <p>When it is an emergency loan, we appreciate that you will need cash quickly, so with an
+                            instant decision and fully online process, Pheabs can approve your loan on the same day and
+                            sometimes, you can receive money to your bank account in just a few hours.
+
+                        </p>
+                    </div>
+                    <div class="ipad-hide col-lg-4 pl-md tablet-hide">
+                        <img class="pl-lg" src="/public/bad-credit-loans.png" width="100%" height="100%" alt="">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-wrap py-lg">
+                    <div class="col-12 col-lg-4 tablet-hide ">
+                        <img src="/public/loans-for-bad-credit.png" width="95%" height="100%" alt="">
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <h1 class="title orange">What is the Eligibility Criteria for Bad Credit Loans?</h1>
+                        <p>Borrowers do not require a perfect credit score in order to be eligible, however, they will
+                            need to meet a basic criteria which includes:</p>
+                        <ul>
+                            <li>Have a live checking account to receive funds</li>
+                            <li>Be a US citizen</li>
+                            <li>Over 18 years of age</li>
+                            <li>Able to make repayments</li>
+                            <li>A steady income of at least $800 per month</li>
+                        </ul>
+                        <p>To proceed, simply click on the ‘get started’ button below.</p>
+                        <div class="button-wrap py-md">
+                            <a class="link-wrap" href="">
+                                <div class="button-started">Get Started
+                                    <div class="button-icon">
+                                        <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="153" height="11" rx="5.5" fill="white" />
+                                        </svg>
+
+                                        <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="d-flex flex-wrap">
+                    <div class="col-12 col-lg-7">
+                        <h1 class="title orange py-lg">Can You Do Same Day Loans for Bad Creadit?</h1>
+                        <p>Yes, Pheabs can facilitate bad credit loans on the same day of applying. The entire process
+                            is online and you can apply 24 hours a day, 7 days a week, using your desktop, mobile or
+                            tablet.
+
+                        </p>
+                        <p>Once approved and you have passed all the credit and affordability checks, you can access
+                            funds within a matter of hours, same day or next day. To boost your chances of getting a
+                            same day loan, try to apply during office hours (9am to 5pm) and on a weekday, and make sure
+                            that all your information such as income and expenses are ready and prepared – since this
+                            will only help speed things up.</p>
+                        <div class="button-wrap py-md">
+                            <a class="link-wrap" href="">
+                                <div class="button-started">Get Started
+                                    <div class="button-icon">
+                                        <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="153" height="11" rx="5.5" fill="white" />
+                                        </svg>
+
+                                        <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 pl-lg-6">
+                        <h1 class="title orange ">Useful Guides</h1>
+                        <ul class="useful-guides">
+                            <li>
+                                <a href="">Can I Get a Loan with Bad Credit?</a>
+                            </li>
+                            <li>
+                                <a href="">Do Payday Loans Help Your Credit?</a>
+                            </li>
+                            <li>
+                                <a href="">How Does a Credit Check Work?</a>
+                            </li>
+                            <li>
+                                <a href="">How To Improve Your Credit Rating</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class=" mx-auto youtubelink py-xl">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0JfOX7c4EMw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+                    </div>
+                    <div>
+                        <h1 class="title orange">Can Pheabs Offer Bad Credit Loans with Guaranteed Approval?</h1>
+                        <p>No, we cannot offer guaranteed bad credit loans, but we can help to match your personal
+                            details and loan requirements with the lender, app or credit union who is most likely to
+                            approve you and offer you the most affordable rates. We understand how difficult it can be
+                            if you need a loan and are finding yourself getting turned down at every place.</p>
+                        <p>At Pheabs, we are delighted to offer a free solution where you can apply with multiple
+                            lenders at once, with no fees for using our service and no impact to your credit score
+                            either. A loan can never be guaranteed and an individual will always need to be approved and
+                            show that they can afford to make their repayment on time and without falling into financial
+                            difficulty.</p>
+                        <h1 class="title orange">How Fast Can You Do Quick Loans for Bad Credit?</h1>
+                        <p>Pheabs can offer quick loans for people with bad credit on the same day, next business day or
+                            sometimes within just a few hours. We have already successfully completed some loans within
+                            1 hour of approval. </p>
+                        <p>When applying for small loans for bad credit or unsecured products, these are usually
+                            processed automatically through income, credit scoring and affordability – so the process
+                            can be much faster and you can receive funds on the same day.</p>
+                        <p>If you are looking to borrow a large loan or you may need to use collateral such as a car or
+                            property, this requires more checks and validation and therefore it can take a few days to
+                            process.</p>
+
+                    </div>
+
+                </div>
+                <div class="d-flex flex-wrap col-12 py-lg">
+                    <div class="col-12 col-lg-4">
+                        <h2 class="black">Types</h2>
+                        <ul>
+                            <li>Payday Loans</li>
+                            <li>Installment Loans</li>
+                            <li>Cash Advances</li>
+                            <li>Secured Loans</li>
+                            <li>Auto Loans</li>
+                            <li>Collateral Loans</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h2 class="orange">Why Pheabs ?</h2>
+                        <ul>
+                            <li>Borrow $100 to $35,000</li>
+                            <li>100% Online application</li>
+                            <li>No Fees for applying</li>
+                            <li>Same Day Funding</li>
+                            <li>All Credit Histories Considered</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h2 class="black">Key Features</h2>
+                        <ul>
+                            <li>Instant decision</li>
+                            <li>No credit checks(secured loans only)</li>
+                            <li>Small loans</li>
+                            <li>Large loans</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="main-col">
+                <div class="py-lg">
+                    <h1 class="title orange">Do You Offer installment Loans with Bad Credit?
+                    </h1>
+                    <p>Yes, you can choose to repay over 1 or 2 months, or use an installment loan to repay over 3,6 or
+                        12 months, usually in equal monthly installments.</p>
+                    <p>This can certainly help people with bad credit to spread the cost of repayment into smaller
+                        amounts, making it more flexible and manageable to pay off. Plus, you always have the option to
+                        pay back early if you need to. So if the loan lasts for 24 or 36 months, you could pay back in
+                        half that time if you prefer to and you will often save money since less interest is accrued.
+                    </p>
+                    <div class="button-wrap mx-auto">
+                        <a class="link-wrap" href="">
+                            <div class="button-started">Get Started
+                                <div class="button-icon">
+                                    <svg id="button-line" width="153" height="11" viewBox="0 0 153 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="153" height="11" rx="5.5" fill="white" />
+                                    </svg>
+
+                                    <svg id="button-curve" width="59" height="106" viewBox="0 0 59 106" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.8155 1.63708C-0.382557 3.82617 -0.389825 7.38265 1.79927 9.58071L45.2062 53.1653L1.5981 96.3179C-0.516977 98.4109 -0.534887 101.822 1.55809 103.937C3.65108 106.052 7.06238 106.07 9.17746 103.977L56.9465 56.7072C59.0616 54.6142 59.0795 51.2029 56.9865 49.0878C56.9763 49.0775 56.966 49.0672 56.9558 49.057C56.8825 48.9742 56.8063 48.8931 56.7273 48.8138L9.75913 1.65331C7.57004 -0.544749 4.01355 -0.552015 1.8155 1.63708Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <h1 class="title oran pt-lg">Can I Get a Loan with No Credit Checks?</h1>
+                    <p>If you are looking for a bad credit loan with no credit checks, you will probably need to
+                        consider using some form of collateral, such as a property, car, bike, van or anything else with
+                        value. This is where you are able to borrow against something valuable, so credit scores are
+                        less important here, but ultimately you could risk losing your collateral if you do not keep up
+                        with repayments.</p>
+                    <h1 class="title orange">How to Apply for a Bad Credit Loan with Pheabs</h1>
+                    <p>Pheabs offers a 100% online process, so all you need to do is click on ‘Get Started’ and you will
+                        be taken to our online application form where you can enter your details such as age, location,
+                        loan amount, loan duration, income and expenses – and you can get an instant decision on the
+                        screen.</p>
+                    <p>As a loans connection service, we will match your application with the lender who is most likely
+                        to approve you and offer the best rates. If you accept the initial quote, there will be some
+                        further checks on your income and affordability, but if approved you can receive funds within an
+                        hour, the same day or next day.</p>
+                    <p>We do not charge any fees for using our service – and we never will. We always work hard to find
+                        the best bad credit loan options for our customers – and you can have peace of mind that
+                        applying with Pheabs will not impact your credit score in any way.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="container py-lg">
+            <div class="main-col">
+                <h1 class="title center">Bad Credit Loan FAQs</h1>
+                <div class="row ">
+
+                    <div class="nav nav-links d-flex  flex-wrap col-lg-4 faq-question" id="myTab">
+
+                        <a href="#first" class="nav-link  flex-fill  active" data-bs-toggle="tab">
+                            Are The Rates Higher for People with Bad Credit?
+                        </a>
+                        <a href="#second" class="nav-link flex-fill mx-6" data-bs-toggle="tab">
+                            Can I Get a Guaranteed Bad Credit Loan?
+                        </a>
+                        <a href="#third" class="nav-link flex-fill " data-bs-toggle="tab">
+                            What Happens if I Cannot Repay My Loans?
+                        </a>
+                        <a href="#fourth" class="nav-link flex-fill" data-bs-toggle="tab">
+                            Do I Need Security or Collateral To Be Approved?
+                        </a>
+                        <a href="#fifth" class="nav-link flex-fill" data-bs-toggle="tab">
+                            Can I Get a Loan if I Have Been Ceclined Before?
+                        </a>
+                        <a href="#sixth" class="nav-link flex-fill" data-bs-toggle="tab">
+                            What Other Alternatives Are available?
+                        </a>
+                    </div>
+
+                    <div class="tab-content col-lg-8 faq-answer">
+                        <div class="tab-pane active" id="first">
+
+                            <p>Yes, the rates charges tend to be higher for people with bad credit histories to reflect
+                                the potential risk of default. This is across all financial products including car
+                                loans, credit cards and personal loans.</p>
+                        </div>
+                        <div class="tab-pane fade" id="second">
+
+                            <p>We can never offer guaranteed loans for bad credit since every application will be
+                                subject to an income and credit check – and we cannot guarantee a loan since you will
+                                need to proof that you can afford to repay on time and not fall into financial
+                                difficulty.</p>
+                        </div>
+                        <div class="tab-pane fade" id="third">
+
+                            <p>If you cannot pay back your loan, you will be charged late fees and this will have a
+                                negative impact on your credit score, making it harder to access finance in the future.
+                                If you are having trouble repaying, make sure you speak to your lender as soon as
+                                possible and they may be able to freeze repayments and remove late charges.</p>
+                        </div>
+                        <div class="tab-pane fade" id="fourth">
+
+                            <p>This will depend on your credit score and also the amount you are looking to borrow. If
+                                you are looking to borrow a very large amount, you may need to use some kind of security
+                                e.g a car or valuable item as collateral. If you have a very bad credit score, you may
+                                need collateral to be approved, but Pheabs is pleased to offer both secured and
+                                unsecured loan options for its customers.</p>
+                        </div>
+                        <div class="tab-pane fade" id="fifth">
+
+                            <p>Yes, you can still get a loan if you have been declined elsewhere. US lenders are always
+                                changing their criteria based on their risk appetites and funding levels – so even if
+                                you have been declined before, this can certainly change. At Pheabs, we work with a huge
+                                market of loan providers who can help, taking all credit histories into consideration.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="sixth">
+
+                            <p>
+                                In addition to bad credit loans, you can always consider borrowing money from family and
+                                friends since this will usually be interest-free and not subject to any credit checks.
+                                You can also consider your local bank or credit union, who may take a different view if
+                                you are a member. Plus, there is always the option to sell old things online or at a
+                                garage sale and you could bring in a few hundred dollars if you need to!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="main-col">
+                <div class="footer-wrapper">
+                    <div class="row row-cols-md-2 row-cols-lg-3">
+                        <div class="col-8 col-lg-7 footer">
+                            <img src="/public/logo.svg" width="130px" height="80px" alt="">
+                            <p class="copyright">Copyright @2021 Pheabs. All Rights Reserved</p>
+                            <p class="address">Address: <br>Pheabs, 515 ELas Olas Boulevard, Suite 120 , Fort Lauderdale
+                                FL 33301</p>
+                            <a href="http://"> Find Us on Google Maps</a>
+                        </div>
+                        <div class="col-8 col-lg-3 footer-link">
+                            <h1>Navigation</h1>
+                            <ul>
+                                <li><a href="http://">About Us</a></li>
+                                <li><a href="http://">Apply Now</a></li>
+                                <li><a href="http://">How it Works</a></li>
+                                <li><a href="http://">Contact Us</a></li>
+                                <li><a href="http://">FAQs</a></li>
+                                <li><a href="http://">Blog</a></li>
+                                <li><a href="http://">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-8 col-lg-2 footer-info">
+                            <h1>Small Print</h1>
+                            <p>Privacy Policy</p>
+                            <p>Terms and Condition</p>
+                            <p>Email: info@pheabs.com</p>
+                            <p>Phone: 1-855-884-6510</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-info">@2023 Pheabs</div>
+                        <div class="footer-social">
+                            <ul>
+                                <li>
+                                    <a href="http://">
+                                        <img src="/public/facebook.svg" width="20" height="20" alt="facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://">
+                                        <img src="/public/linkedin.svg" width="20" height="20" alt="facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://">
+                                        <img src="/public/youtube.svg" width="20" height="20" alt="facebook">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="block" onclick="topFunction()" id="arrow-up" title="Go to top">
+            <img src="/public/up-arrow.svg" width="20" height="20" alt="arrow-up">
+
+        </button>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootnavbar.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/range.js"></script>
+    <script src="/js/gototop.js"></script>
+
+    <script>
+        new bootnavbar();
+    </script>
+</body>
+
+</html>

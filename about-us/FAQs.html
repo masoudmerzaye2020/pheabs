@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/range.css">
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <!-- range slider -->
+    <script src="/js/rangeslider.min.js"></script>
+
+
+    <title>pheabs</title>
+
+ <style>
+   .faqs{
+    width: 100%;
+    margin: auto;
+     display: flex; 
+  height: auto;
+}
+
+.accordion-body {
+  padding: 20px 0px ;
+}
+
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+.accordion-button:not(.collapsed) {
+  
+  background-color: #e7f1ff;
+  box-shadow: 0;
+}
+.accordion-button:not(.collapsed) {
+  /* color: #0c63e4; */
+  background-color: #e7f1ff;
+  /* box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%); */
+}
+.accordion-item {
+  padding: 12px 0px;
+   border:0px   solid rgba(0,0,0,.125); 
+  
+  border-bottom: 1px solid;
+  border-color: var(--cyan-gray);
+ 
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: var(--white);
+  outline: 0;
+  box-shadow: 0;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25); 
+}
+
+
+.accordion-button:not(.collapsed) {
+  color: var(--black);
+  background-color: #ffffff !important;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.13);
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  content: "";
+  background-image: url(/public/plus.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/public/minus.png);
+  transform: rotate(-180deg);
+}
+
+ </style>
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-fixed-top" id="main_navbar" role="navigation">
+        <div class="container-fluid ">
+          <a id="logo" class="navbar-brand logo" href="#">
+            <img src="/public/logo.svg" alt="logo" width="100" height="50">
+          </a>
+    
+          <div id="social-nav" class="social-media">
+            <ul>
+              <li>
+                <img src="/public/facebook.svg" width="30" height="30" alt="facebok icon">
+              </li>
+              <li>
+                <img src="/public/linkedin.svg" width="30" height="30" alt="linkedin">
+              </li>
+              <li>
+                <img src="/public/envelope.svg" width="30" height="30" alt="envelope">
+              </li>
+            </ul>
+          </div>
+    
+    
+    
+    
+          <input type="checkbox" class="openSidebarMenu navbar-toggler" id="openSidebarMenu" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+          <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+          </label>
+    
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/about-us/about-us.html" role="button" data-bs-toggle="dropdown">
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/about-us/about-us.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="/about-us/FAQs.html">FAQ</a></li>
+                  <li><a class="dropdown-item" href="/about-us/how-it-works.html">How it works</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Our Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/our-product/bad-credit-loans.html">Bad Credit loas</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/our-product/cash-advances.html">Cash Advance</a></li>
+                  <li><a class="dropdown-item" href="/our-product/emergency-cash-loans.html">Emergency Cash
+                      Loans</a></li>
+                  <li><a class="dropdown-item" href="/our-product/fast-cash.html">Fast Cash</a></li>
+                  <li><a class="dropdown-item" href="/our-product/guaranteed-loans.html">Guaranteed Loans</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/our-product/installment-loans.html">Installment Loans</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/our-product/no-credit-check-loans.html">No Credit Check
+                      Loans</a></li>
+                  <li><a class="dropdown-item" href="/our-product/online-loans.html">Online Loans</a></li>
+                  <li><a class="dropdown-item" href="/our-product/payday-advance.html">Payday Advance</a></li>
+                  <li><a class="dropdown-item" href="/our-product/personal-loans-for-bad-credit.html">Personal
+                      Loans for Bad Credit</a></li>
+                  <li><a class="dropdown-item" href="/our-product/same-day-loans.html">Same Day Loans</a></li>
+                  <li><a class="dropdown-item" href="/our-product/short-term-loans.html">Short Term Loans</a>
+                  </li>
+                 
+                </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Payday Loads
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/pay-day/alabama.html">Alabama</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/california.html">California</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/colorado.html">Colorado</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/florida.html">Florida</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/illinoise.html">Illinois</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/indiana.html">Indiana</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/iowa.html">Iowa</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/kentucky.html">Kentucky</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/las-vegas-and-nevada.html">Las Vegas and
+                      Nevada</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/louisiana.html">Louisiana</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/maryland.html">Maryland</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/new-mexico.html">New Mexico</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/ohio.html">Ohio</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/tennessee.html">Tennessee</a></li>
+                  <li><a class="dropdown-item" href="/pay-day/texas.html">Texas</a></li>
+    
+    
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/canada.html" role="button">
+                  Canada
+                </a>
+    
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Business
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/business/invoice-factoring.html">Invoice Factoring</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/business/merchand-cash-advance.html">Merchand Cash</a>
+                  </li>
+    
+    
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/guides.html" role="button">
+                  Guides
+                </a>
+    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link get-started" aria-current="page" href="#">Get Started</a>
+              </li>
+            </ul>
+    
+    
+    
+          </div>
+        </div>
+      </nav>
+
+    <section id="faqs-hero" class="hero bg-2">
+        <div class="hero-container mx-auto">
+
+          
+                <div class=" py-xl ">
+                    <h1 class="hero-title center">Frequently Asked Questions</h1>
+                </div>
+         
+
+        </div>
+    </section>
+
+    <section id="faqs">
+        <div class="container py-lg">
+            <div class="main-col">
+                <div class="faqs-wrapper row">
+
+                    <div class="accordion row faqs" id="accordionPanelsStayOpenExample">
+                        <div class="col-12 col-lg-6">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        Do you charge any fees?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        No, we do not charge fees for making a loan request with Pheabs. We work on a commission basis with our lending partners and may receive a commission if your submission is successful. But you can be rest assured that if you submit an enquiry, you will not be charged anything by Pheabs.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        What is a payday loan?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                       <p>A payday loan is used to cover short term and emergency expenses – the idea is that you receive the money upfront, in one lump sum and then pay off the loan in full in a couple of weeks on your next ‘payday.’</p>
+                                        <p>With Pheabs, you can borrow $100 to $35,000 depending on your credit score, income and affordability. You can repay over 1 to 60 months depending the loan size. When making a loan request, funds can be successfully sent to your bank account in 24 hours or less.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseThree">
+                                        Am i eligible?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                       <h2>The eligibility criteria with Pheabs is:</h2>
+                                       <ul>
+                                           <li>Be a US citizen</li>
+                                           <li>Over 18 years of age</li>
+                                           <li>Have a live checking account to receive funds</li>
+                                           <li>A steady income of at least $800 per month</li>
+                                           <li>Bad credit consideration</li>
+                                           <li>Able to make repayments</li>
+                                       </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFour">
+                                        will this impact my credit score?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingFour">
+                                    <div class="accordion-body">
+                                       <p>
+                                        No, making a loan submission will not impact your credit score in a negative way. Credit checks will be carried out as part of the approval process, but will not be negatively impacted. Your credit score will only worsen if you are accepted for a loan and struggle to make repayments on time, putting your account into arrears. Equally, if you make repayments on time, this could make your credit score improve, however, payday loans should not be seen as a way to boost your credit score.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFive">
+                                        <a href="http://">Whic states do you operate in?</a>
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingFive">
+                                    <div class="accordion-body">
+                                       <p>We currently operate in the following US states and we are in the process of adding more locations, so be sure to check your eligibility using our loan form provided: </p>
+                                       <ul>
+                                           <li><a href="">Albama</a></li>
+                                           <li><a href="">California</a></li>
+                                           <li><a href="">Colorado</a></li>
+                                           <li><a href="">Florida</a></li>
+                                           <li><a href="">Illinois</a></li>
+                                           <li><a href="">Indiana</a></li>
+                                           <li><a href="">Iowa</a></li>
+                                           <li><a href="">Kentucky</a></li>
+                                           <li><a href="">Louisiana</a></li>
+                                           <li><a href="">Maryland</a></li>
+                                           <li><a href="">Ohio</a></li>
+                                           <li><a href="">Tennessee</a></li>
+                                           <li><a href="">Texas</a></li>
+                                       </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseSix">
+                                        How long does it take to submit a loan enquiry?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingSix">
+                                    <div class="accordion-body">
+                                        <p>Any loan requests are made 100% online through Pheabs and you can get started here. You can fill in your details in less than 5 minutes and get an instant decision on the screen. If successful, funds can be transferred within 24 hours or the next business day.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseSeven">
+                                        Do i need to give my bank details?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingSeven">
+                                    <div class="accordion-body">
+                                       <p>Yes, we will need you to enter your bank details so that we can transfer the money to your back account when you are successfully approved. We promise that your details are safe and we will not pass on your bank details or any other information to any third parties without your permission.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseEight">
+                                        How long will it take for the funds to reach my account?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingEight">
+                                    <div class="accordion-body">
+                                    <p>Money can be sent to your bank account within 24 hours (or sometimes just a few hours). As a standard, we say that you should be able to receive funds on the next business day.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseNine">
+                                        What happens if i make a late payment?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingNine">
+                                    <div class="accordion-body">
+                                       <p>If you miss your scheduled repayment or are late, you may be charged a late fee and this could negatively impact your credit score.</p>
+                                       <p>If you think that you will have trouble repaying this month or next, it is important to speak to your lender as soon as possible – as they can usually help you and reduce any late fees or damage to your credit rating.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTen">
+                                        How do repayments work?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTen">
+                                    <div class="accordion-body">
+                                       <p>Repayments are collected automatically from your bank account, on a scheduled date that you have agreed with the lender. You will be sent reminders on the days leading up to repayment so that there are no surprises. Repayments are made each month over a period of 1 to 60 months, depending on the size of your loan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        
+                        </div>
+                        
+                    </div>
+    
+                    
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="footer">
+        <div class="container">
+          <div class="main-col">
+            <div class="footer-wrapper">
+                <div class="row row-cols-md-2 row-cols-lg-3">
+                  <div class="col-8 col-lg-7 footer">
+                    <img src="/public/logo.svg" width="130px" height="80px" alt="">
+                    <p class="copyright">Copyright @2021 Pheabs. All Rights Reserved</p>
+                    <p class="address">Address: <br>Pheabs, 515 ELas Olas Boulevard, Suite 120 , Fort Lauderdale FL 33301</p>
+                    <a href="http://"> Find Us on Google Maps</a>
+                  </div>
+                  <div class="col-8 col-lg-3 footer-link">
+                    <h1>Navigation</h1>
+                    <ul>
+                      <li><a href="http://">About Us</a></li>
+                      <li><a href="http://">Apply Now</a></li>
+                      <li><a href="http://">How it Works</a></li>
+                      <li><a href="http://">Contact Us</a></li>
+                      <li><a href="http://">FAQs</a></li>
+                      <li><a href="http://">Blog</a></li>
+                      <li><a href="http://">Sitemap</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-8 col-lg-2 footer-info">
+                    <h1>Small Print</h1>
+                    <p>Privacy Policy</p>
+                    <p>Terms and Condition</p>
+                    <p>Email: info@pheabs.com</p>
+                    <p>Phone: 1-855-884-6510</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="footer-info">@2023 Pheabs</div>
+                  <div class="footer-social">
+                    <ul>
+                      <li>
+                        <a href="http://">
+                          <img src="/public/facebook.svg" width="20" height="20" alt="facebook">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://">
+                          <img src="/public/linkedin.svg" width="20" height="20" alt="facebook">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://">
+                          <img src="/public/youtube.svg" width="20" height="20" alt="facebook">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <button class="block" onclick="topFunction()" id="arrow-up" title="Go to top">
+            <img src="/public/up-arrow.svg" width="20" height="20" alt="arrow-up" >
+            
+        </button>
+      </section>
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootnavbar.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/range-1.js"></script>
+    <script src="/js/gototop.js"></script>
+
+    <script>
+        new bootnavbar();
+    </script>
+</body>
+
+</html>
